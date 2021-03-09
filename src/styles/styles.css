@@ -1,0 +1,23 @@
+.header {
+	position: relative;
+	/* fallback for old browsers */
+	background: #5a3f37;
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to right, #2c7744, #5a3f37);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #2c7744, #5a3f37);
+}
+
+.header-wave {
+	height: 200px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+
+.text-white {
+	color: 'white';
+}
