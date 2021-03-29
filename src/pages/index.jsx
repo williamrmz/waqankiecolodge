@@ -3,7 +3,9 @@ import '../styles/global.css';
 import '../styles/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import '../sass/custom.css';
 import { Link } from 'gatsby';
+import Reserve from '../components/reserve/Reserve';
 
 const IndexPage = () => {
 	return (
@@ -110,6 +112,8 @@ const IndexPage = () => {
 						<div></div>
 					</div>
 				</section>
+
+				<Reserve />
 			</main>
 		</div>
 	);

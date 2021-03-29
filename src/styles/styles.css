@@ -21,3 +21,29 @@
 .text-white {
 	color: 'white';
 }
+
+.w-60 {
+	width: 65%;
+}
+
+.w-40 {
+	width: 35%;
+}
+
+.container-reserve {
+	background-color: #fff;
+	border-radius: 50px;
+}
+
+.carousel-reserve {
+	border-top-left-radius: 50px;
+}
+
+.description-reserve {
+	border-bottom-left-radius: 50px;
+}
+
+.form-reserve {
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}

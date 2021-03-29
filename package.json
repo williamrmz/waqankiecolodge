@@ -17,6 +17,7 @@
   "dependencies": {
     "bootstrap": "^5.0.0-beta2",
     "gatsby": "^3.0.0",
+    "gatsby-image": "^3.0.0",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-sharp": "^3.0.0",
     "gatsby-source-filesystem": "^3.0.0",
