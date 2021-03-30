@@ -1,49 +1,77 @@
 .header {
-	position: relative;
-	/* fallback for old browsers */
-	background: #5a3f37;
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: -webkit-linear-gradient(to right, #2c7744, #5a3f37);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	background: linear-gradient(to right, #2c7744, #5a3f37);
+    position: relative;
+    /* fallback for old browsers */
+    /*background: #5a3f37;
+	background: -webkit-linear-gradient(to right,#3fb54a,  #83c33f);
+	background: linear-gradient(to right,#3fb54a,  #83c33f);*/
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-wave {
-	height: 200px;
-	overflow: hidden;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 3;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.hw-first {
+    height: 200px;
+}
+
+.hw-second {
+    height: 160px;
+}
+
+.hw-third {
+    height: 120px;
 }
 
 .text-white {
-	color: 'white';
+    color: "white";
 }
 
-.w-60 {
-	width: 65%;
+.box-shadow-img {
+    border-radius: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.w-65 {
+    width: 65%;
 }
 
-.w-40 {
-	width: 35%;
+.w-35 {
+    width: 35%;
 }
 
 .container-reserve {
-	background-color: #fff;
-	border-radius: 50px;
+    background-color: #fff;
+    border-radius: 50px;
 }
 
 .carousel-reserve {
-	border-top-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 .description-reserve {
-	border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 .form-reserve {
-	border-top-right-radius: 50px;
-	border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.img-reserve {
+    height: 80%;
+    width: 100%;
+}
+
+.carousel,
+.carousel-item,
+.carousel-inner {
+    height: 100%;
 }
