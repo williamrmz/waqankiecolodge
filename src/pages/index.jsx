@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // import '../sass/custom.css';
 import { Link } from 'gatsby';
 import Reserve from '../components/reserve/Reserve';
+import Catalogue from '../components/catalogue/Catalogue';
 
 const IndexPage = () => {
 	return (
@@ -114,6 +115,8 @@ const IndexPage = () => {
 				</section>
 
 				<Reserve />
+
+				<Catalogue />
 			</main>
 		</div>
 	);
