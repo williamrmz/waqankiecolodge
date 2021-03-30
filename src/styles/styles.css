@@ -38,3 +38,28 @@
 	border-radius: 100%;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.w-60 {
+	width: 65%;
+}
+
+.w-40 {
+	width: 35%;
+}
+
+.container-reserve {
+	background-color: #fff;
+	border-radius: 50px;
+}
+
+.carousel-reserve {
+	border-top-left-radius: 50px;
+}
+
+.description-reserve {
+	border-bottom-left-radius: 50px;
+}
+
+.form-reserve {
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
