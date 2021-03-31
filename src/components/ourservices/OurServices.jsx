@@ -29,10 +29,10 @@ export default function OurServices() {
         >
             <div className="container-fluid  d-flex align-self-stretch">
                 {data.allMarkdownRemark.edges.map((service, key) => (
-                    <>
+                    <React.Fragment key={service.node.frontmatter.title}>
                         <h3>{service.node.frontmatter.title}</h3>
                         <p>{service.node.frontmatter.description}</p>
-                    </>
+                    </React.Fragment>
                 ))}
             </div>
         </section>

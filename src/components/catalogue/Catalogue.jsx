@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Catalogue = () => {
     const ruta = "../../images/1.jpg";
-    const image = <StaticImage className="card-img-top" src={ruta} alt="..." />;
+    const image = <StaticImage className="card-img-top" src={ruta} alt="MainImage" />;
 
     return (
         <section
