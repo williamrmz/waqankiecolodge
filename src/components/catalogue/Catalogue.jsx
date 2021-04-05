@@ -1,26 +1,49 @@
-import React from "react";
-import Card from "./Card";
-import { StaticImage } from "gatsby-plugin-image";
+import React from 'react';
+import Card from './Card';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Catalogue = () => {
-    const ruta = "../../images/1.jpg";
-    const image = <StaticImage className="card-img-top" src={ruta} alt="MainImage" />;
-
-    return (
-        <section
-            style={{
-                backgroundColor: "#eeaa22",
-            }}
-            id="catalogue"
-            className="d-flex vh-100 w-100 justify-content-center align-items-center"
-        >
-            <div className="container d-flex justify-content-evenly h-50 m-0 p-0">
-                <Card image={image} title={"CARD UNO"} description={"DESCRIPCIÓN UNO"} />
-                <Card image={image} title={"CARD DOS"} description={"DESCRIPCIÓN DOS"} />
-                <Card image={image} title={"CARD TRES"} description={"DESCRIPCIÓN TRES"} />
-            </div>
-        </section>
-    );
+	return (
+		<section
+			style={{
+				backgroundColor: '#eeaa22',
+			}}
+			id="catalogue"
+			className="d-flex flex-column vh-100 w-100 justify-content-center align-items-center"
+		>
+			<div className="mb-4">
+				<h1>Nuestros CATÁLOGOS</h1>
+			</div>
+			<div className="container  d-flex justify-content-evenly h-50">
+				<Card
+					image={
+						<StaticImage
+							className="h-50 catalogue-card-image"
+							src={'../../images/Buff_tailed_skilebill.jpg'}
+							alt="MainImage"
+						/>
+					}
+					title={'CATÁLOGO DE AVES'}
+					description={
+						'Paraiso de orquideas y aves, un viaje que permite a los amantes de la naturaleza un memorable acercamiento a este mundo mágico.'
+					}
+				/>
+				<Card
+					image={
+						<StaticImage
+							className="h-50 catalogue-card-image"
+							src={'../../images/Rufous_crested_coquette.jpg'}
+							alt="MainImage"
+						/>
+					}
+					title={'CATÁLOGO DE ORQUÍDEAS'}
+					description={
+						'En el jardín botánico Waqanki cuenta con área de terreno destinada a la conservación de más de 250 especies de orquídeas y otras especies de plantas ornamentales de la Amazonia Peruana.'
+					}
+				/>
+			</div>
+		</section>
+	);
 };
 
 export default Catalogue;
