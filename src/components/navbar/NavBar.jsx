@@ -37,34 +37,17 @@ export default function NavBar() {
             }}
         >
             <div className="container-fluid">
-                <Link
-                    className="navbar-brand"
-                    to={"/"}
-                    style={{ margin: "1rem 0 0 2rem" }}
-                >
-                    <GatsbyImage
-                        image={getImage(data.logo)}
-                        style={{ width: "130px" }}
-                    />
+                <Link className="navbar-brand" to={"/"} style={{ margin: "1rem 0 0 2rem" }}>
+                    <GatsbyImage image={getImage(data.logo)} style={{ width: "130px" }} />
                 </Link>
 
                 <div className="container">
-                    <div
-                        className="collapse navbar-collapse"
-                        id="navbarNavAltMarkup"
-                    >
+                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <Link
-                                className="nav-link text-white active"
-                                aria-current="page"
-                                to={"#"}
-                            >
+                            <Link className="nav-link text-white active" aria-current="page" to={"#"}>
                                 Inicio
                             </Link>
-                            <Link
-                                className="nav-link text-white"
-                                to="#servicios"
-                            >
+                            <Link className="nav-link text-white" to="#servicios">
                                 Servicios
                             </Link>
                             <Link className="nav-link text-white" to="#">
@@ -78,24 +61,15 @@ export default function NavBar() {
                 </div>
 
                 <div className="dropdown dropstart">
-                    <a
-                        role="button"
-                        id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        href="/"
-                    >
+                    <a role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" href="/">
                         <GatsbyImage
                             className="box-shadow-img"
                             image={getImage(data.spanish)}
                             style={{ width: "35px", marginRight: "1rem" }}
                         />
                     </a>
-                    <ul
-                        className="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton1"
-                    >
-                        <li className="dropdown-item d-flex" style={{cursor:'pointer'}}>
+                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li className="dropdown-item d-flex" style={{ cursor: "pointer" }}>
                             <GatsbyImage
                                 className="box-shadow-img"
                                 image={getImage(data.english)}
@@ -106,8 +80,7 @@ export default function NavBar() {
                             />
                             English
                         </li>
-                        <li className="dropdown-item d-flex" style={{cursor:'pointer'}}>
-                            {" "}
+                        <li className="dropdown-item d-flex" style={{ cursor: "pointer" }}>
                             <GatsbyImage
                                 className="box-shadow-img"
                                 image={getImage(data.spanish)}
