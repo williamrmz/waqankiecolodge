@@ -38,23 +38,23 @@ export default function OurServices() {
                         {[...Array((Math.ceil(data.allMarkdownRemark.edges.length/4))).keys()].map((a,i)=>
                             <div className={`carousel-item ${i==0 ? 'active' : '' }`}>
                                 <div className="d-flex justify-content-center mt-5">
-                                    <div className="d-flex justify-content-around justify-content-center card-service">
+                                    <div className="d-flex justify-content-around justify-content-center align-items-center card-service">
                                         <div className="d-flex flex-column">
-                                            <div className="icon-service"></div>
+                                            <div className="icon-service-button"></div>
                                             <h5 className="text-uppercase fw-bold mb-4">{data.allMarkdownRemark.edges[(i*3)].node.frontmatter.title}</h5>
                                             <p style={{textAlign: 'justify'}}>{data.allMarkdownRemark.edges[(i*3)].node.frontmatter.description}</p>
                                         </div>
                                     </div>
-                                    <div className="d-flex justify-content-around justify-content-center card-service">
+                                    <div className="d-flex justify-content-around justify-content-center align-items-center card-service">
                                         <div className="d-flex flex-column">
-                                            <div className="icon-service"></div>
+                                            <div className="icon-service-button"></div>
                                             <h5 className="text-uppercase fw-bold mb-4">{data.allMarkdownRemark.edges[(i*3)+1].node.frontmatter.title}</h5>
                                             <p style={{textAlign: 'justify'}}>{data.allMarkdownRemark.edges[(i*3)+1].node.frontmatter.description}</p>
                                         </div>
                                     </div>
-                                    <div className="d-flex justify-content-around justify-content-center card-service">
+                                    <div className="d-flex justify-content-around justify-content-center align-items-center card-service">
                                         <div className="d-flex flex-column">
-                                            <div className="icon-service"></div>
+                                            <div className="icon-service-button"></div>
                                             <h5 className="text-uppercase fw-bold mb-4">{data.allMarkdownRemark.edges[(i*3)+2].node.frontmatter.title}</h5>
                                             <p style={{textAlign: 'justify'}}>{data.allMarkdownRemark.edges[(i*3)+2].node.frontmatter.description}</p>
                                         </div>
