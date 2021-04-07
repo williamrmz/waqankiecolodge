@@ -1,14 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
 
 import { Link, graphql, useStaticQuery } from "gatsby";
 
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import {Link as LinkI18, useTranslation, useI18next} from 'gatsby-plugin-react-i18next';
+import { Link as LinkI18, useTranslation, useI18next } from "gatsby-plugin-react-i18next";
 
 const NavBar = () => {
-    const {languages, originalPath} = useI18next();
-    const {t} = useTranslation();
-    const alias = ['English', 'Español'];
+    const { languages, originalPath } = useI18next();
+    const { t } = useTranslation();
+    const alias = ["English", "Español"];
     const data = useStaticQuery(graphql`
         query {
             logo: file(relativePath: { eq: "logo_white.png" }) {
@@ -48,16 +48,16 @@ const NavBar = () => {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
                             <Link className="nav-link text-white active" aria-current="page" to={"#"}>
-                                {t('Inicio')}
+                                {t("Inicio")}
                             </Link>
                             <Link className="nav-link text-white" to="#servicios">
-                                {t('Servicios')}
+                                {t("Servicios")}
                             </Link>
                             <Link className="nav-link text-white" to="#">
-                                {t('Reservas')}
+                                {t("Reservas")}
                             </Link>
                             <Link className="nav-link text-white" to="#">
-                                {t('Catalogos')}
+                                {t("Catalogos")}
                             </Link>
                         </div>
                     </div>
@@ -72,26 +72,32 @@ const NavBar = () => {
                         />
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    {languages.map((lng,i) => (
-                        <li >
-                        <LinkI18 to={originalPath} language={lng} className="dropdown-item d-flex" style={{ cursor: "pointer" }} key={lng}>
-                            <GatsbyImage
-                                className="box-shadow-img"
-                                image={getImage(data[i+1])}
-                                style={{
-                                    width: "25px",
-                                    marginRight: "1rem",
-                                }}
-                            />
-                            {alias[i]}
-                            </LinkI18>
-                        </li>
-                    ))}
+                        {languages.map((lng, i) => (
+                            <li>
+                                <LinkI18
+                                    to={originalPath}
+                                    language={lng}
+                                    className="dropdown-item d-flex"
+                                    style={{ cursor: "pointer" }}
+                                    key={lng}
+                                >
+                                    <GatsbyImage
+                                        className="box-shadow-img"
+                                        image={getImage(data[i + 1])}
+                                        style={{
+                                            width: "25px",
+                                            marginRight: "1rem",
+                                        }}
+                                    />
+                                    {alias[i]}
+                                </LinkI18>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>
         </nav>
     );
-}
+};
 
 export default NavBar;

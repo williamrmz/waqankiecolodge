@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import {useTranslation} from 'gatsby-plugin-react-i18next';
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 const Header = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const data = useStaticQuery(graphql`
         query {
             backgroundw: file(relativePath: { eq: "images/bg.png" }) {
