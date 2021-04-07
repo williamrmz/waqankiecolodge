@@ -1,5 +1,5 @@
 import React from "react";
-import Colleccion from "./Collecion";
+import Colleccion from "./Colleccion";
 
 import { useTranslation, Trans } from "gatsby-plugin-react-i18next";
 

@@ -1,4 +1,4 @@
 module.exports = {
-  languages: ['en', 'es'],
-  defaultLanguage: 'es'
+    languages: [`es`, `en`],
+    defaultLanguage: `es`,
 };

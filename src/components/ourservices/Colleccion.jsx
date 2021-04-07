@@ -1,7 +1,7 @@
 import React from "react";
 import Item from "./Item";
 
-const Collecion = ({ clases, datos }) => {
+const Colleccion = ({ clases, datos }) => {
     return (
         <div className={`carousel-item ${clases}`}>
             <div className="d-flex justify-content-center mt-5">
@@ -13,4 +13,4 @@ const Collecion = ({ clases, datos }) => {
     );
 };
 
-export default Collecion;
+export default Colleccion;

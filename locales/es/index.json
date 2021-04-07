@@ -17,5 +17,16 @@
     "service5-titulo": "Mirador y senderos para la observación de aves",
     "service5-descripcion": "Haz un recorrido por nuestros senderos ideales para la observación de aves, mariposas y anfibios.",
     "service6-titulo": "Caminatas en el bosque y visita a cascadas",
-    "service6-descripcion": "Caminata rodeada de exuberante variedad de flora y fauna nativa con la opción de refrescarse en las aguas cristalinas de las cataratas."
+    "service6-descripcion": "Caminata rodeada de exuberante variedad de flora y fauna nativa con la opción de refrescarse en las aguas cristalinas de las cataratas.",
+    "seccion-habitaciones": "Nuestras Habitaciones",
+    "habitacion-solo": "",
+    "habitacion-doble": "",
+    "habitacion-triple": "",
+    "habitacion-reserva": "Reservar Habitación",
+    "habitacion-reserva-nombre": "Nombres",
+    "habitacion-reserva-apellidos": "Apellidos",
+    "habitacion-reserva-correo": "Correo",
+    "habitacion-reserva-telefono": "Celular",
+    "habitacion-reserva-fechallegada": "Fecha de Llegada",
+    "habitacion-reserva-fechasalida": "Fecha de Salida"
 }

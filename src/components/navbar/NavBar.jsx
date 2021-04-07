@@ -8,7 +8,7 @@ import { Link as LinkI18, useTranslation, useI18next } from "gatsby-plugin-react
 const NavBar = () => {
     const { languages, originalPath } = useI18next();
     const { t } = useTranslation();
-    const alias = ["English", "Español"];
+    const alias = ["Español", "English"];
     const data = useStaticQuery(graphql`
         query {
             logo: file(relativePath: { eq: "logo_white.png" }) {

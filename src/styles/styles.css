@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     position: relative;
     /* fallback for old browsers */
@@ -151,7 +161,7 @@
     opacity: 1;
 }
 
-.card-service{    
+.card-service {
     background-color: white;
     border-radius: 0px 2rem 2rem 2rem;
     padding: 2rem 2rem;
@@ -161,7 +171,7 @@
     max-width: 19rem;
 }
 
-.icon-service-button{    
+.icon-service-button {
     border-radius: 100%;
     width: 5rem;
     height: 5rem;
