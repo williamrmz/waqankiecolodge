@@ -10,6 +10,7 @@ import NavBar from '../components/navbar/NavBar';
 import Header from '../components/header/Header';
 import OurServices from '../components/ourservices/OurServices';
 import Tours from '../components/tours/Tours';
+import {graphql, Link as GatsbyLink} from 'gatsby';
 
 const IndexPage = () => {
 	return (
@@ -25,5 +26,19 @@ const IndexPage = () => {
 		</div>
 	);
 };
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {ns: {in: ["index"]}, language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;

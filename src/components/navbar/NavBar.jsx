@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 
 import { Link, graphql, useStaticQuery } from "gatsby";
 
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import {Link as LinkI18, useTranslation, useI18next} from 'gatsby-plugin-react-i18next';
 
-export default function NavBar() {
+const NavBar = () => {
+    const {languages, originalPath} = useI18next();
+    const {t} = useTranslation();
+    const alias = ['English', 'Español'];
     const data = useStaticQuery(graphql`
         query {
             logo: file(relativePath: { eq: "logo_white.png" }) {
@@ -12,13 +16,12 @@ export default function NavBar() {
                     gatsbyImageData(placeholder: NONE)
                 }
             }
-            spanish: file(relativePath: { eq: "spanish_language.png" }) {
+            english: file(relativePath: { eq: "english_language.png" }) {
                 childImageSharp {
                     gatsbyImageData(placeholder: NONE)
                 }
             }
-
-            english: file(relativePath: { eq: "english_language.png" }) {
+            spanish: file(relativePath: { eq: "spanish_language.png" }) {
                 childImageSharp {
                     gatsbyImageData(placeholder: NONE)
                 }
@@ -45,16 +48,16 @@ export default function NavBar() {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
                             <Link className="nav-link text-white active" aria-current="page" to={"#"}>
-                                Inicio
+                                {t('Inicio')}
                             </Link>
                             <Link className="nav-link text-white" to="#servicios">
-                                Servicios
+                                {t('Servicios')}
                             </Link>
                             <Link className="nav-link text-white" to="#">
-                                Reservas
+                                {t('Reservas')}
                             </Link>
                             <Link className="nav-link text-white" to="#">
-                                Catálogos
+                                {t('Catalogos')}
                             </Link>
                         </div>
                     </div>
@@ -69,31 +72,26 @@ export default function NavBar() {
                         />
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li className="dropdown-item d-flex" style={{ cursor: "pointer" }}>
+                    {languages.map((lng,i) => (
+                        <li >
+                        <LinkI18 to={originalPath} language={lng} className="dropdown-item d-flex" style={{ cursor: "pointer" }} key={lng}>
                             <GatsbyImage
                                 className="box-shadow-img"
-                                image={getImage(data.english)}
+                                image={getImage(data[i+1])}
                                 style={{
                                     width: "25px",
                                     marginRight: "1rem",
                                 }}
                             />
-                            English
+                            {alias[i]}
+                            </LinkI18>
                         </li>
-                        <li className="dropdown-item d-flex" style={{ cursor: "pointer" }}>
-                            <GatsbyImage
-                                className="box-shadow-img"
-                                image={getImage(data.spanish)}
-                                style={{
-                                    width: "25px",
-                                    marginRight: "1rem",
-                                }}
-                            />
-                            Español
-                        </li>
+                    ))}
                     </ul>
                 </div>
             </div>
         </nav>
     );
 }
+
+export default NavBar;

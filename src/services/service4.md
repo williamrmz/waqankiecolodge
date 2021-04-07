@@ -1,5 +1,5 @@
 ---
-title: Visitas guiadas en Jardín Botánico
+title: Ruta del café
 description: Nuestro jardín alberga orquídeas, heliconias, helechos y otras especies de plantas de nuestra región.
 ---
 

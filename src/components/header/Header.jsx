@@ -1,7 +1,9 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import {useTranslation} from 'gatsby-plugin-react-i18next';
 
 const Header = () => {
+    const {t} = useTranslation();
     const data = useStaticQuery(graphql`
         query {
             backgroundw: file(relativePath: { eq: "images/bg.png" }) {
@@ -24,7 +26,7 @@ const Header = () => {
                     {data.site.siteMetadata.title}
                 </p>
                 <p className="h6 text-center text-white" style={{ fontSize: "1.4rem", fontWeight: "normal" }}>
-                    {data.site.siteMetadata.description}
+                    {t(`Descripcion`)}
                 </p>
                 <button
                     className="btn"
@@ -35,7 +37,7 @@ const Header = () => {
                         borderRadius: "2rem",
                     }}
                 >
-                    Ir
+                    {t(`Ir`)}
                 </button>
             </div>
             <div className="header-wave hw-first">
