@@ -4,8 +4,8 @@ import Item from "./Item";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Carousel = () => {
-    const image1 = <StaticImage className="reserve-img active" src={"../../images/1.jpg"} alt="MainImage" />;
-    const image2 = <StaticImage className="reserve-img" src={"../../images/1.jpg"} alt="MainImage" />;
+    const image1 = <StaticImage className="reserve-img active" src={"../../images/1.jpg"} alt="Luna" />;
+    const image2 = <StaticImage className="reserve-img" src={"../../images/1.jpg"} alt="Luna 2" />;
     return (
         <div id="carouselReserve" className="carousel slide" data-bs-interval="false">
             <div className="carousel-inner reserve-carousel reserve-container-room">

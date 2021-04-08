@@ -17,28 +17,28 @@ const Tours = () => {
             </div>
             <div className="container h-75 d-flex flex-column justify-content-evenly align-items-center">
                 <Card
-                    image={<StaticImage className="tour-border tour-image" src={"../../images/tour1.jpg"} alt="MainImage" />}
+                    image={<StaticImage className="tour-border tour-image" src={"../../images/tour1.jpg"} alt="Luna 1" />}
                     title={"CATÁLOGO DE AVES"}
                     description={
                         "Paraiso de orquideas y aves, un viaje que permite a los amantes de la naturaleza un memorable acercamiento a este mundo mágico."
                     }
                 />
                 <Card
-                    image={<StaticImage className="tour-border tour-image" src={"../../images/tour2.jpg"} alt="MainImage" />}
+                    image={<StaticImage className="tour-border tour-image" src={"../../images/tour2.jpg"} alt="Luna 2" />}
                     title={"CATÁLOGO DE AVES"}
                     description={
                         "Paraiso de orquideas y aves, un viaje que permite a los amantes de la naturaleza un memorable acercamiento a este mundo mágico."
                     }
                 />
                 <Card
-                    image={<StaticImage className="tour-border tour-image" src={"../../images/tour3.jpg"} alt="MainImage" />}
+                    image={<StaticImage className="tour-border tour-image" src={"../../images/tour3.jpg"} alt="Luna 3" />}
                     title={"CATÁLOGO DE AVES"}
                     description={
                         "Paraiso de orquideas y aves, un viaje que permite a los amantes de la naturaleza un memorable acercamiento a este mundo mágico."
                     }
                 />
                 <Card
-                    image={<StaticImage className="tour-border tour-image" src={"../../images/tour4.jpg"} alt="MainImage" />}
+                    image={<StaticImage className="tour-border tour-image" src={"../../images/tour4.jpg"} alt="Luna 4" />}
                     title={"CATÁLOGO DE AVES"}
                     description={
                         "Paraiso de orquideas y aves, un viaje que permite a los amantes de la naturaleza un memorable acercamiento a este mundo mágico."

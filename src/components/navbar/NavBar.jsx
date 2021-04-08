@@ -15,19 +15,24 @@ const NavBar = () => {
                 childImageSharp {
                     gatsbyImageData(placeholder: NONE)
                 }
+                name
             }
             english: file(relativePath: { eq: "english_language.png" }) {
                 childImageSharp {
                     gatsbyImageData(placeholder: NONE)
                 }
+                name
             }
             spanish: file(relativePath: { eq: "spanish_language.png" }) {
                 childImageSharp {
                     gatsbyImageData(placeholder: NONE)
                 }
+                name
             }
         }
     `);
+
+    console.log(data.logo);
     return (
         <nav
             className="navbar navbar-expand-lg navbar-light"
@@ -41,7 +46,7 @@ const NavBar = () => {
         >
             <div className="container-fluid">
                 <Link className="navbar-brand" to={"/"} style={{ margin: "1rem 0 0 2rem" }}>
-                    <GatsbyImage image={getImage(data.logo)} style={{ width: "130px" }} />
+                    <GatsbyImage image={getImage(data.logo)} alt={data.logo.name} style={{ width: "130px" }} />
                 </Link>
 
                 <div className="container">
@@ -53,10 +58,10 @@ const NavBar = () => {
                             <Link className="nav-link text-white" to="#servicios">
                                 {t("Servicios")}
                             </Link>
-                            <Link className="nav-link text-white" to="#">
+                            <Link className="nav-link text-white" to="reserr">
                                 {t("Reservas")}
                             </Link>
-                            <Link className="nav-link text-white" to="#">
+                            <Link className="nav-link text-white" to="cataloge">
                                 {t("Catalogos")}
                             </Link>
                         </div>
@@ -68,6 +73,7 @@ const NavBar = () => {
                         <GatsbyImage
                             className="box-shadow-img"
                             image={getImage(data.spanish)}
+                            alta={data.spanish.name}
                             style={{ width: "35px", marginRight: "1rem" }}
                         />
                     </a>
@@ -79,11 +85,13 @@ const NavBar = () => {
                                     language={lng}
                                     className="dropdown-item d-flex"
                                     style={{ cursor: "pointer" }}
-                                    key={lng}
+                                    key={i}
                                 >
                                     <GatsbyImage
+                                        key={i}
                                         className="box-shadow-img"
                                         image={getImage(data[i + 1])}
+                                        alt={lng}
                                         style={{
                                             width: "25px",
                                             marginRight: "1rem",

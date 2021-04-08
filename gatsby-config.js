@@ -18,15 +18,23 @@ module.exports = {
             resolve: "gatsby-source-filesystem",
             options: {
                 name: "images",
-                path: path.join(__dirname, `src`, `images`),
+                // path: path.join(__dirname, `src`, `images`),
+                path: `${__dirname}/src/images`,
             },
-            __key: "images",
         },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
                 path: `${__dirname}/locales`,
                 name: `locale`,
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "aves",
+                // path: path.join(__dirname, `src`, `aves`),
+                path: `${__dirname}/src/aves`,
             },
         },
         {

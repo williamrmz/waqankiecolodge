@@ -6,11 +6,6 @@ const Header = () => {
     const { t } = useTranslation();
     const data = useStaticQuery(graphql`
         query {
-            backgroundw: file(relativePath: { eq: "images/bg.png" }) {
-                childImageSharp {
-                    gatsbyImageData(placeholder: NONE)
-                }
-            }
             site {
                 siteMetadata {
                     title
