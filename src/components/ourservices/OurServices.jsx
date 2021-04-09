@@ -72,9 +72,9 @@ export default function OurServices() {
             id="servicios"
             className="position-relative vh-100 w-100 pt-5"
         >
-            <div className="container-fluid align-self-stretch pt-5">
+            <div className="container-fluid align-self-stretch">
                 <div className="d-flex justify-content-center">
-                    <h2 style={{ fontWeight: "bolder" }}>
+                    <h2 style={{ fontWeight: "bolder", fontSize:'2rem' }}>
                         {/* NUESTROS <strong>SERVICIOS</strong> */}
                         <Trans>seccion-servicios</Trans>
                     </h2>
