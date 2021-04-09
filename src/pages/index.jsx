@@ -2,14 +2,14 @@ import React from "react";
 import "../styles/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import Reserve from "../components/reserve/Reserve";
-import Catalogue from "../components/catalogue/Catalogue";
 
-import Header from '../components/header/Header';
-import OurServices from '../components/ourservices/OurServices';
-import PromocionalVideo from '../components/promocionalvideo/PromocionalVideo';
-import Tours from '../components/tours/Tours';
-import {graphql} from 'gatsby';
+import Header from "../components/header/Header";
+import OurServices from "../components/ourservices/OurServices";
+import OurRooms from "../components/ourrooms/OurRooms";
+import Catalogue from "../components/ourcatalogues/OurCatalogues";
+import PromocionalVideo from "../components/promocionalvideo/PromocionalVideo";
+import OurTours from "../components/ourtours/OurTours";
+import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 
 const IndexPage = () => {
@@ -20,9 +20,9 @@ const IndexPage = () => {
                 <main>
                     <OurServices />
                     <PromocionalVideo />
-                    <Reserve />
+                    <OurRooms />
                     <Catalogue />
-                    <Tours />
+                    <OurTours />
                 </main>
             </Layout>
         </div>
