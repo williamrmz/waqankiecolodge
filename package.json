@@ -15,6 +15,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@iconify-icons/mdi": "^1.1.13",
+    "@iconify/react": "^1.1.4",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.0.0-beta2",
     "gatsby": "^3.0.0",
