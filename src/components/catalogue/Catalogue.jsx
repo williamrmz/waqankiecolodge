@@ -20,11 +20,8 @@ const Catalogue = () => {
 	);
 	return (
 		<section
-			style={{
-				backgroundColor: '#eeaa22',
-			}}
 			id="catalogos"
-			className="d-flex flex-column vh-100 w-100 justify-content-center align-items-center"
+			className="d-flex flex-column vh-100 w-100 justify-content-center align-items-center section-cataloge"
 		>
 			<div className="mb-4">
 				<h1>Nuestros CATÁLOGOS</h1>
@@ -36,6 +33,7 @@ const Catalogue = () => {
 					description={
 						'Paraiso de orquideas y aves, un viaje que permite a los amantes de la naturaleza un memorable acercamiento a este mundo mágico.'
 					}
+					ruta={'aves'}
 				/>
 				<Card
 					image={imageflower}

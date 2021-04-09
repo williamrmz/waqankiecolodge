@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
-const Card = ({ image, title, description }) => {
+const Card = ({ image, title, description, ruta }) => {
 	return (
 		<div className="card w-35 catalogue-card text-center">
 			{image}
@@ -8,9 +9,12 @@ const Card = ({ image, title, description }) => {
 				<h5 className="card-title">{title}</h5>
 				<p className="card-text">{description}</p>
 				{/*  stretched-link */}
-				{/* <a href="#" className="btn btn-primary">
+				{/* <a href="" className="btn btn-primary">
 					Ver más
 				</a> */}
+				<Link className="btn btn-success" to={`/${ruta}`}>
+					Ver más
+				</Link>
 			</div>
 		</div>
 	);

@@ -6,9 +6,8 @@ import { Link as LinkI18, useTranslation, useI18next } from 'gatsby-plugin-react
 import { StaticImage } from 'gatsby-plugin-image';
 
 const NavBar = () => {
-	const { originalPath } = useI18next();
+	const { language, originalPath } = useI18next();
 	const { t } = useTranslation();
-
 	return (
 		<nav
 			className="navbar navbar-expand-lg navbar-light"
@@ -60,13 +59,23 @@ const NavBar = () => {
 						aria-expanded="false"
 						href="/"
 					>
-						<StaticImage
-							className="box-shadow-img"
-							style={{ width: '35px', marginRight: '1rem' }}
-							src={'../../images/spanish_language.png'}
-							alt="Spanish"
-							placeholder="none"
-						/>
+						{language === 'es' ? (
+							<StaticImage
+								className="box-shadow-img"
+								style={{ width: '35px', marginRight: '1rem' }}
+								src={'../../images/spanish_language.png'}
+								alt="Spanish"
+								placeholder="none"
+							/>
+						) : (
+							<StaticImage
+								className="box-shadow-img"
+								style={{ width: '35px', marginRight: '1rem' }}
+								src={'../../images/english_language.png'}
+								alt="Spanish"
+								placeholder="none"
+							/>
+						)}
 					</a>
 					<ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 						<li>
