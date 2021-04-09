@@ -1,6 +1,5 @@
 import React from "react";
 import Item from "./Item";
-// import { graphql, useStaticQuery } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Carousel = () => {
