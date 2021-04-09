@@ -1,6 +1,6 @@
 import React from 'react'
-import {graphql, Link as GatsbyLink} from 'gatsby';
-import {Link, useTranslation, Trans, useI18next} from 'gatsby-plugin-react-i18next';
+import {graphql} from 'gatsby';
+import {Link, useTranslation, useI18next} from 'gatsby-plugin-react-i18next';
 
 const Contactpage = () => {
     const {t} = useTranslation();

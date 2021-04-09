@@ -10,7 +10,7 @@ import NavBar from '../components/navbar/NavBar';
 import Header from '../components/header/Header';
 import OurServices from '../components/ourservices/OurServices';
 import Tours from '../components/tours/Tours';
-import {graphql, Link as GatsbyLink} from 'gatsby';
+import {graphql} from 'gatsby';
 
 const IndexPage = () => {
 	return (
