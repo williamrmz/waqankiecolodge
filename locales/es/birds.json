@@ -1,8 +1,9 @@
 {
-    "Inicio": "Inicio",
-    "Servicios": "Servicios",
-    "Reservas": "Reservas",
-    "Catalogos": "Catálogos",
-    "Descripcion": "Mas de 250 especies de orquídeas, plantas ornamentales, mirador para la observación de colibrís, senderos de observación de aves, mariposas, anfibios y la ruta del café.",
-    "Ir": "Ir"
+	"Inicio": "Inicio",
+	"Servicios": "Servicios",
+	"Reservas": "Reservas",
+	"Catalogos": "Catálogos",
+	"Tours": "Tours",
+	"Descripcion": "Mas de 250 especies de orquídeas, plantas ornamentales, mirador para la observación de colibrís, senderos de observación de aves, mariposas, anfibios y la ruta del café.",
+	"Ir": "Ir"
 }
