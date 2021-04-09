@@ -187,3 +187,9 @@ html {
     background-color: #000000;
     position: relative;
 }
+
+video {
+    /* override other styles to make responsive */
+    width: 100%    !important;
+    height: auto   !important;
+  }

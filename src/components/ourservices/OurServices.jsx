@@ -64,13 +64,31 @@ export default function OurServices() {
         { titulo: t(`service5-titulo`), descripcion: t(`service5-descripcion`), imageUrl: data.service5, icon: telescopeIcon },
         { titulo: t(`service6-titulo`), descripcion: t(`service6-descripcion`), imageUrl: data.service6, icon: waterIcon },
     ];
+    const arreglo11 = [
+        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon, },
+    ];
+    const arreglo21 = [
+        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon, },
+    ];
+    const arreglo31 = [
+        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon, },
+    ];
+    const arreglo41 = [
+        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon, },
+    ];
+    const arreglo51 = [
+        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon, },
+    ];
+    const arreglo61 = [
+        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon, },
+    ];
     return (
         <section
             style={{
                 backgroundColor: "#EEEEEE",
             }}
             id="servicios"
-            className="position-relative vh-100 w-100 pt-5"
+            className="position-relative py-5"
         >
             <div className="container-fluid align-self-stretch">
                 <div className="d-flex justify-content-center">
@@ -80,7 +98,7 @@ export default function OurServices() {
                     </h2>
                 </div>
                 <div id="carouselServices" className="carousel slide" data-bs-interval="false">
-                    <div className="carousel-inner">
+                    <div className="carousel-inner ">
                         <Colleccion clases={"active"} datos={arreglo1} />
                         <Colleccion datos={arreglo2} />
                     </div>
