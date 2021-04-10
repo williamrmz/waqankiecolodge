@@ -4,12 +4,12 @@ import Colleccion from "./Colleccion";
 import { useTranslation, Trans } from "gatsby-plugin-react-i18next";
 import { Link, graphql, useStaticQuery } from "gatsby";
 
-import roadIcon from '@iconify-icons/mdi/road';
-import birdIcon from '@iconify-icons/mdi/bird';
-import foodIcon from '@iconify-icons/mdi/food';
-import flowerTulip from '@iconify-icons/mdi/flower-tulip';
-import telescopeIcon from '@iconify-icons/mdi/telescope';
-import waterIcon from '@iconify-icons/mdi/water';
+import roadIcon from "@iconify-icons/mdi/road";
+import birdIcon from "@iconify-icons/mdi/bird";
+import foodIcon from "@iconify-icons/mdi/food";
+import flowerTulip from "@iconify-icons/mdi/flower-tulip";
+import telescopeIcon from "@iconify-icons/mdi/telescope";
+import waterIcon from "@iconify-icons/mdi/water";
 
 export default function OurServices() {
     const { t } = useTranslation();
@@ -54,7 +54,7 @@ export default function OurServices() {
         }
     `);
     const arreglo1 = [
-        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon, },
+        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon },
         { titulo: t(`service2-titulo`), descripcion: t(`service2-descripcion`), imageUrl: data.service2, icon: birdIcon },
         { titulo: t(`service3-titulo`), descripcion: t(`service3-descripcion`), imageUrl: data.service3, icon: foodIcon },
     ];
@@ -65,7 +65,7 @@ export default function OurServices() {
         { titulo: t(`service6-titulo`), descripcion: t(`service6-descripcion`), imageUrl: data.service6, icon: waterIcon },
     ];
     const arreglosmActive = [
-        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon }
+        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon },
     ];
     const arreglosm = [
         { titulo: t(`service2-titulo`), descripcion: t(`service2-descripcion`), imageUrl: data.service2, icon: birdIcon },
@@ -115,9 +115,9 @@ export default function OurServices() {
                 <div id="carouselServicesSmall" className="carousel slide d-lg-none" data-bs-interval="false">
                     <div className="carousel-inner">
                         <Colleccion clases={"active"} datos={arreglosmActive} />
-                        {
-                            arreglosm.map((arreglo,key)=><Colleccion datos={[arreglo]} />)
-                        }
+                        {arreglosm.map((arreglo, i) => (
+                            <Colleccion key={i} datos={[arreglo]} />
+                        ))}
                     </div>
                     <button
                         className="carousel-control-prev"
