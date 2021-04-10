@@ -1,6 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
+
 const HeaderTour = () => {
     return (
         <header className="vh-100 w-100 header-tour animate__animated animate__fadeInDown" id="inicioTour">

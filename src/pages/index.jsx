@@ -9,6 +9,7 @@ import OurRooms from "../components/ourrooms/OurRooms";
 import Catalogue from "../components/ourcatalogues/OurCatalogues";
 import PromocionalVideo from "../components/promocionalvideo/PromocionalVideo";
 import OurTours from "../components/ourtours/OurTours";
+import Comments from "../components/comments/Comments";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 
@@ -23,6 +24,7 @@ const IndexPage = () => {
                     <OurRooms />
                     <Catalogue />
                     <OurTours />
+                    <Comments />
                 </main>
             </Layout>
         </div>
