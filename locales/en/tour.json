@@ -1,9 +1,10 @@
 {
-    "Inicio": "Home",
-    "Servicios": "Services",
-    "Reservas": "Bookings",
-    "Catalogos": "Catalogs",
-    "Tours": "Tours",
-    "Descripcion": "More than 250 species of orchids, ornamental plants, viewpoint for observing hummingbirds, birdwatching trails, butterflies, amphibians and the coffee route.",
-    "Ir": "Go"
+	"Inicio": "Home",
+	"Servicios": "Services",
+	"Reservas": "Bookings",
+	"Catalogos": "Catalogs",
+	"Tours": "Tours",
+	"Descripcion": "More than 250 species of orchids, ornamental plants, viewpoint for observing hummingbirds, birdwatching trails, butterflies, amphibians and the coffee route.",
+	"Ir": "Go",
+	"main-title": "This itinerary covers the Amazon and low areas along the Marañón River, tropical forests, cloud forests, dry forests of the upper part of the Marañón, dry forests of the coastal part of Peru, etc."
 }
