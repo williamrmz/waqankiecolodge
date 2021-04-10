@@ -58,7 +58,7 @@ const OurRooms = () => {
             className="d-flex flex-column vh-100 w-100 justify-content-center align-items-center rooms-section"
         >
             <div className="mb-4">
-                <h1>{t(`seccion-habitaciones`)}</h1>
+                <h1 className="section-title">{t(`seccion-habitaciones`)}</h1>
             </div>
             <div className="container rooms-container d-flex h-75 m-0 p-0">
                 <div className="w-65 h-100 d-flex flex-column ">
