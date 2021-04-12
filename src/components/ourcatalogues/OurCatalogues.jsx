@@ -11,14 +11,11 @@ const OurCatalogues = () => {
         <StaticImage className="h-50 catalogue-card-image" src={"../../images/Rufous_crested_coquette.jpg"} alt="card-flower" />
     );
     return (
-        <section
-            id="catalogos"
-            className="d-flex flex-column vh-100 w-100 justify-content-center align-items-center section-cataloge"
-        >
+        <section id="catalogos" className="d-flex flex-column w-100 justify-content-center align-items-center section-cataloge">
             <div className="mb-4">
                 <h1>Nuestros CATÁLOGOS</h1>
             </div>
-            <div className="container d-flex justify-content-evenly h-75">
+            <div className="container-catalogue container d-flex justify-content-evenly h-75">
                 <Card
                     image={imagebird}
                     title={"CATÁLOGO DE AVES"}

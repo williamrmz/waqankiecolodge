@@ -53,18 +53,15 @@ const OurRooms = () => {
     };
 
     return (
-        <section
-            id="habitaciones"
-            className="d-flex flex-column vh-100 w-100 justify-content-center align-items-center rooms-section"
-        >
+        <section id="habitaciones" className="rooms-section d-flex flex-column w-100 justify-content-center align-items-center">
             <div className="mb-4">
                 <h1 className="section-title">{t(`seccion-habitaciones`)}</h1>
             </div>
-            <div className="container rooms-container d-flex h-75 m-0 p-0">
-                <div className="w-65 h-100 d-flex flex-column ">
+            <div className="rooms-container d-flex m-0 p-0">
+                <div className="rooms-in w-65 h-100 d-flex flex-column ">
                     <Carousel />
                 </div>
-                <div className="w-35 h-100 roon-reserve-form d-flex justify-content-center align-items-center">
+                <div className="rooms-in w-35 h-100 roon-reserve-form d-flex justify-content-center align-items-center">
                     <Form sendInfo={sendInfo} handleChange={handleChange} />
                 </div>
             </div>

@@ -6,15 +6,20 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import HeaderTour from "../components/tour/HeaderTour";
 import Tour from "../components/tour/Tour";
+import Guide from "../components/tour/guides/GuideCard";
+import GuideModal from "../components/tour/guides/GuideModal";
 
-const tour = ({ location }) => {
-    console.log(location.state);
+const tour = () => {
+    let state = JSON.parse(localStorage.getItem("state"));
     return (
         <div className="container-fluid p-0">
             <Layout>
-                <HeaderTour tourSelect={location.state} />
+                <HeaderTour tourSelect={state} />
                 <main>
-                    <Tour tourSelect={location.state} />
+                    <Guide />
+                    <Tour tourSelect={state} />
+
+                    <GuideModal />
                 </main>
             </Layout>
         </div>

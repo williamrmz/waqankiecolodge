@@ -19,26 +19,26 @@ html {
     background-repeat: no-repeat;
 }
 
-.logo-header-link{
+.logo-header-link {
     margin: 1rem 0 0 2rem;
 }
 
-.header-section{
+.header-section {
     width: 50%;
 }
 
-.header-section .h1{
-    font-size:  3.5rem;
+.header-section .h1 {
+    font-size: 3.5rem;
     font-weight: bolder;
 }
 
-.header-section .h6{
-    font-size:  1.4rem;
+.header-section .h6 {
+    font-size: 1.4rem;
     font-weight: normal;
 }
 
-.section-title{
-    font-size:  2rem;
+.section-title {
+    font-size: 2rem;
     font-weight: bolder;
 }
 
@@ -107,9 +107,12 @@ html {
 .rooms-section {
     background-color: #eeeeee;
     position: relative;
+    height: 100vh;
 }
 
 .rooms-container {
+    width: 80%;
+    height: 75%;
     background-color: #fff;
     border-radius: 50px;
     z-index: 2;
@@ -175,6 +178,9 @@ html {
     background-color: #3fb54b;
     height: 100%;
 }
+.tour-container-card {
+    width: 90%;
+}
 
 .tour-border {
     border-radius: 30px;
@@ -238,6 +244,7 @@ html {
 /* CATALOGOS */
 .section-cataloge {
     background-color: #3fb54b;
+    height: 100vh;
 }
 
 /* BIRDS */
@@ -251,9 +258,9 @@ video {
     height: auto !important;
 }
 
-.video-container{
-  height: 75vh;
-  max-width: 400vh;
+.video-container {
+    height: 75vh;
+    max-width: 400vh;
 }
 
 /* PAGE TOUR */
@@ -262,6 +269,7 @@ video {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .tourpage-image {
@@ -272,6 +280,11 @@ video {
     transition: 0.5s ease;
     backface-visibility: hidden;
     filter: brightness(60%);
+}
+
+.image-profile-guide {
+    width: 110px;
+    height: 110px;
 }
 
 .tourpage-title-overlay {
@@ -329,21 +342,100 @@ ul.timeline > li:before {
 
 @media (max-width: 600px) {
     .logo-header-link {
-      margin: .2rem 0 0 .2rem;
+        margin: 0.2rem 0 0 0.2rem;
     }
-  
-    .header-section{
+
+    .header-section {
         width: 90%;
     }
-  
-    .header-section .h1{
-        font-size:  2.4rem;
+
+    .header-section .h1 {
+        font-size: 2.4rem;
         font-weight: bolder;
     }
-    
-    .header-section .h6{
-        font-size:  1.1rem;
+
+    .header-section .h6 {
+        font-size: 1.1rem;
         font-weight: normal;
         line-height: 1.5rem;
     }
-  }
+
+    /* ROOMS */
+    .rooms-section {
+        height: 100%;
+    }
+
+    .rooms-container {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rooms-in {
+        width: 100%;
+        height: 100%;
+    }
+
+    .rooms-carousel {
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .roon-reserve-form {
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 50px;
+    }
+
+    /* CATÁLOGOS */
+
+    .section-cataloge {
+        padding-top: 40px;
+        height: 100%;
+    }
+
+    .container-catalogue {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* TOUR */
+    .tour-container-card {
+        width: 100%;
+    }
+
+    .tour-card-container {
+        height: 220px;
+    }
+
+    /* TOUR PAGE */
+
+    .header-tour {
+        margin-bottom: 40px;
+    }
+
+    .tour-header-image {
+        height: 50%;
+    }
+
+    .tour-header-text {
+        height: 50%;
+    }
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23288b17' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23288b17' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}

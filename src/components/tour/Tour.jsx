@@ -8,7 +8,7 @@ const Tour = ({ tourSelect }) => {
     if (tourSelect.rute === "main") return <TourMain />;
     if (tourSelect.rute === "scarlet") return <TourScarlet />;
     if (tourSelect.rute === "white") return <TourWhite />;
-    if (tourSelect.ruta === "yellow") return <TourYellow />;
+    if (tourSelect.rute === "yellow") return <TourYellow />;
     return <div>Loading...</div>;
 };
 

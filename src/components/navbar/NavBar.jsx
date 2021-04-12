@@ -49,7 +49,7 @@ const NavBar = () => {
 
                 <div className="dropdown dropstart">
                     <a role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" href="/">
-                        {language == "es" ? (
+                        {language === "es" ? (
                             <StaticImage
                                 className="box-shadow-img"
                                 style={{ width: "35px", marginRight: "1rem" }}
