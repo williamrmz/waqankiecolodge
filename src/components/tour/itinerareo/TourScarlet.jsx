@@ -8,10 +8,11 @@ const TourScarlet = () => {
         <div className="w-100 d-flex justify-content-center align-items-center flex-column">
             <h1 className="mt-5 mb-3">Itinerario</h1>
             <ul className="timeline w-65">
-                <Day day={"DAY 1"} paragraph={t(`scarlet-day1`)} />
-                <Day day={"DAY 2"} paragraph={t(`scarlet-day2`)} />
-                <Day day={"DAY 3"} paragraph={t(`scarlet-day3`)} />
-                <Day day={"DAY 4"} paragraph={t(`scarlet-day4`)} />
+                <Day day={"DAY 0"} paragraph={t(`scarlet-day0`)} site={"Hotel Monte Verde-Bellavista"} />
+                <Day day={"DAY 1"} paragraph={t(`scarlet-day1`)} site={"Hotel-Plataforma"} />
+                <Day day={"DAY 2"} paragraph={t(`scarlet-day2`)} site={"Hotel-Plataforma"} />
+                <Day day={"DAY 3"} paragraph={t(`scarlet-day3`)} site={"Hotel Rio Cumbaza-Tarapoto."} />
+                <Day day={"DAY 4"} paragraph={t(`scarlet-day4`)} site={""} />
             </ul>
         </div>
     );
