@@ -18,14 +18,15 @@ module.exports = {
             resolve: "gatsby-source-filesystem",
             options: {
                 name: "images",
-                // path: path.join(__dirname, `src`, `images`),
-                path: `${__dirname}/src/images`,
+                path: path.join(__dirname, `src`, `images`),
+                // path: `${__dirname}/src/images`,
             },
         },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                path: `${__dirname}/locales`,
+                // path: `${__dirname}/locales`,
+                path: path.join(__dirname, `locales`),
                 name: `locale`,
             },
         },
@@ -33,8 +34,8 @@ module.exports = {
             resolve: "gatsby-source-filesystem",
             options: {
                 name: "aves",
-                // path: path.join(__dirname, `src`, `aves`),
-                path: `${__dirname}/src/aves`,
+                path: path.join(__dirname, `src`, `aves`),
+                // path: `${__dirname}/src/aves`,
             },
         },
         {
@@ -42,7 +43,6 @@ module.exports = {
             options: {
                 languages,
                 defaultLanguage,
-                // siteUrl: "https://kind-lichterman-5edcb4.netlify.app",
                 i18nextOptions: {
                     defaultNS: "common",
                     //debug: true,
