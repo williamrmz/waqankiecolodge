@@ -13,7 +13,7 @@
         "build": "gatsby build",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
-        "deploy": "gatsby build --prefix-path && gh-pages -d public"
+        "deploy": "gatsby build --prefix-paths && gh-pages -d public"
     },
     "dependencies": {
         "@iconify-icons/mdi": "^1.1.13",
