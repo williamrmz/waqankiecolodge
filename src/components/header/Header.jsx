@@ -19,10 +19,8 @@ const Header = () => {
                 <p className="h1 text-center text-white animate__animated animate__fadeInDown animate__slow">
                     {data.site.siteMetadata.title}
                 </p>
-                <p className="h6 text-center text-white animate__animated animate__fadeInUp animate__slow">
-                    {t(`Descripcion`)}
-                </p>
-                <button
+                <p className="h6 text-center text-white animate__animated animate__fadeInUp animate__slow">{t(`Descripcion`)}</p>
+                {/* <button
                     className="btn animate__animated animate__fadeInUp animate__slow animate__delay-1s"
                     style={{
                         marginTop: "1rem",
@@ -32,7 +30,7 @@ const Header = () => {
                     }}
                 >
                     {t(`Ir`)}
-                </button>
+                </button> */}
             </div>
             <div className="header-wave hw-first">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" className="h-100 w-100">

@@ -19,7 +19,14 @@ const OurTours = () => {
 
             <div className="tour-container-card h-75 d-flex flex-column align-items-center">
                 <Card
-                    image={<StaticImage className="tour-border tour-image" src={"../../images/tour1.jpg"} alt="Luna 1" />}
+                    image={
+                        <StaticImage
+                            className="tour-border tour-image"
+                            src={"../../images/tour1.jpg"}
+                            alt="Luna 1"
+                            placeholder="none"
+                        />
+                    }
                     title={"Northen Perú Itinerary"}
                     description={
                         "Este itinerario abarca la amazonia y áreas bajas a lo largo del rio Marañón, bosques tropicales, bosques nublados, bosque seco de la parte alta del Marañón, bosques secos de la parte costa del Perú, etc."
@@ -27,7 +34,14 @@ const OurTours = () => {
                     rute={"main"}
                 />
                 <Card
-                    image={<StaticImage className="tour-border tour-image" src={"../../images/tour2.jpg"} alt="Luna 2" />}
+                    image={
+                        <StaticImage
+                            className="tour-border tour-image"
+                            src={"../../images/tour2.jpg"}
+                            alt="Luna 2"
+                            placeholder="none"
+                        />
+                    }
                     title={"Scarlet Banded Barbet"}
                     description={
                         "Este itinerario abarca la amazonia y áreas bajas a lo largo del rio Marañón, bosques tropicales, bosques nublados, bosque seco de la parte alta del Marañón, bosques secos de la parte costa del Perú, etc."
@@ -35,7 +49,14 @@ const OurTours = () => {
                     rute={"scarlet"}
                 />
                 <Card
-                    image={<StaticImage className="tour-border tour-image" src={"../../images/tour3.jpg"} alt="Luna 3" />}
+                    image={
+                        <StaticImage
+                            className="tour-border tour-image"
+                            src={"../../images/tour3.jpg"}
+                            alt="Luna 3"
+                            placeholder="none"
+                        />
+                    }
                     title={"White-Masked Antbird"}
                     description={
                         "Este itinerario abarca la amazonia y áreas bajas a lo largo del rio Marañón, bosques tropicales, bosques nublados, bosque seco de la parte alta del Marañón, bosques secos de la parte costa del Perú, etc."
@@ -43,7 +64,14 @@ const OurTours = () => {
                     rute={"white"}
                 />
                 <Card
-                    image={<StaticImage className="tour-border tour-image" src={"../../images/tour4.jpg"} alt="Luna 4" />}
+                    image={
+                        <StaticImage
+                            className="tour-border tour-image"
+                            src={"../../images/tour4.jpg"}
+                            alt="Luna 4"
+                            placeholder="none"
+                        />
+                    }
                     title={"Yellow Faced Parrotlet-Purple Backed Sunbean"}
                     description={
                         "Este itinerario abarca la amazonia y áreas bajas a lo largo del rio Marañón, bosques tropicales, bosques nublados, bosque seco de la parte alta del Marañón, bosques secos de la parte costa del Perú, etc."

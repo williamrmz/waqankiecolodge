@@ -1,38 +1,40 @@
 {
-  "name": "waqankiecolodge",
-  "version": "1.0.0",
-  "private": true,
-  "description": "waqankiecolodge",
-  "author": "William",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "env-cmd .env.development gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@iconify-icons/mdi": "^1.1.13",
-    "@iconify/react": "^1.1.4",
-    "animate.css": "^4.1.1",
-    "bootstrap": "^5.0.0-beta2",
-    "gatsby": "^3.0.0",
-    "gatsby-image": "^3.0.0",
-    "gatsby-plugin-image": "^1.0.0",
-    "gatsby-plugin-react-i18next": "^1.1.1",
-    "gatsby-plugin-sass": "^4.0.2",
-    "gatsby-plugin-sharp": "^3.0.0",
-    "gatsby-plugin-sitemap": "^3.2.0",
-    "gatsby-source-filesystem": "^3.2.0",
-    "gatsby-transformer-remark": "^3.2.0",
-    "gatsby-transformer-sharp": "^3.0.0",
-    "i18next": "^19.9.2",
-    "node-sass": "^5.0.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-i18next": "^11.8.12"
-  }
+    "name": "waqankiecolodge",
+    "version": "1.0.0",
+    "private": true,
+    "description": "waqankiecolodge",
+    "author": "William",
+    "keywords": [
+        "gatsby"
+    ],
+    "scripts": {
+        "develop": "env-cmd .env.development gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean",
+        "deploy": "gatsby build --prefix-path && gh-pages -d public"
+    },
+    "dependencies": {
+        "@iconify-icons/mdi": "^1.1.13",
+        "@iconify/react": "^1.1.4",
+        "animate.css": "^4.1.1",
+        "bootstrap": "^5.0.0-beta2",
+        "gatsby": "^3.0.0",
+        "gatsby-image": "^3.0.0",
+        "gatsby-plugin-image": "^1.0.0",
+        "gatsby-plugin-react-i18next": "^1.1.1",
+        "gatsby-plugin-sass": "^4.0.2",
+        "gatsby-plugin-sharp": "^3.0.0",
+        "gatsby-plugin-sitemap": "^3.2.0",
+        "gatsby-source-filesystem": "^3.2.0",
+        "gatsby-transformer-remark": "^3.2.0",
+        "gatsby-transformer-sharp": "^3.0.0",
+        "gh-pages": "^3.1.0",
+        "i18next": "^19.9.2",
+        "node-sass": "^5.0.0",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-i18next": "^11.8.12"
+    }
 }

@@ -4,11 +4,21 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const OurCatalogues = () => {
     const imagebird = (
-        <StaticImage className="h-50 catalogue-card-image" src={"../../images/Buff_tailed_skilebill.jpg"} alt="card-bird" />
+        <StaticImage
+            className="h-50 catalogue-card-image"
+            src={"../../images/Buff_tailed_skilebill.jpg"}
+            alt="card-bird"
+            placeholder="none"
+        />
     );
 
     const imageflower = (
-        <StaticImage className="h-50 catalogue-card-image" src={"../../images/Rufous_crested_coquette.jpg"} alt="card-flower" />
+        <StaticImage
+            className="h-50 catalogue-card-image"
+            src={"../../images/Rufous_crested_coquette.jpg"}
+            alt="card-flower"
+            placeholder="none"
+        />
     );
     return (
         <section id="catalogos" className="d-flex flex-column w-100 justify-content-center align-items-center section-cataloge">

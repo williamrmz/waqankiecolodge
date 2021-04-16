@@ -19,7 +19,7 @@ const HeaderTour = ({ tourSelect }) => {
         return (
             <header className="w-100 header-tour animate__animated animate__fadeInDown" id="inicioTour">
                 <div className="position-relative h-65 tour-header-image">
-                    <StaticImage className="tourpage-image" src={"../../images/tour1.jpg"} alt="Luna 1" />
+                    <StaticImage className="tourpage-image" src={"../../images/tour1.jpg"} alt="Luna 1" placeholder="none" />
                     <div className="tourpage-title-overlay text-white">
                         <h1>{state.title}</h1>
                     </div>

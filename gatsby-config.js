@@ -2,6 +2,7 @@ const path = require(`path`);
 const { languages, defaultLanguage } = require("./languages");
 
 module.exports = {
+    pathPrefix: "/waqankiecolodge",
     siteMetadata: {
         title: "WAQANKI ECO LODGE",
         description: `Mas de 250 especies de orquídeas, plantas ornamentales, mirador para la observación de

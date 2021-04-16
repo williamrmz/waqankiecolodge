@@ -22,7 +22,7 @@ const IndexPage = () => {
                     <OurRooms />
                     <Catalogue />
                     <OurTours />
-                    <Comments />
+                    {/* <Comments /> */}
                 </main>
             </Layout>
         </div>

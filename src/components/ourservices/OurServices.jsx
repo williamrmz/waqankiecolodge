@@ -2,7 +2,7 @@ import React from "react";
 import Colleccion from "./Colleccion";
 
 import { useTranslation, Trans } from "gatsby-plugin-react-i18next";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
 import roadIcon from "@iconify-icons/mdi/road";
 import birdIcon from "@iconify-icons/mdi/bird";

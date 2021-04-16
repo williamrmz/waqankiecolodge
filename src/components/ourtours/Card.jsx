@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "gatsby";
+import React, { useEffect } from "react";
+import { Link } from "gatsby-plugin-react-i18next";
 
 const Card = ({ image, title, description, rute }) => {
-    let state = { rute, title };
+    // let state = { rute, title };
 
     // localStorage.setItem("state", JSON.stringify(state));
 
     useEffect(() => {
         const fetchData = () => {
-            localStorage.setItem("state", JSON.stringify(state));
+            localStorage.setItem("state", JSON.stringify({ rute, title }));
         };
         fetchData();
-    }, []);
+    }, [rute, title]);
 
     return (
         <div className="position-relative m-2 tour-card-container w-75 h-15 tour-border">

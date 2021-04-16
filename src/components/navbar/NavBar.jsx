@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
-
-import { Link as LinkI18, useTranslation, useI18next } from "gatsby-plugin-react-i18next";
+import { Link, useTranslation, useI18next } from "gatsby-plugin-react-i18next";
 import { StaticImage } from "gatsby-plugin-image";
 
 const NavBar = () => {
@@ -68,7 +66,7 @@ const NavBar = () => {
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li>
-                            <LinkI18
+                            <Link
                                 to={originalPath}
                                 language={"es"}
                                 className="dropdown-item d-flex"
@@ -85,11 +83,11 @@ const NavBar = () => {
                                     placeholder="none"
                                 />
                                 Español
-                            </LinkI18>
+                            </Link>
                         </li>
 
                         <li>
-                            <LinkI18
+                            <Link
                                 to={originalPath}
                                 language={"en"}
                                 className="dropdown-item d-flex"
@@ -106,7 +104,7 @@ const NavBar = () => {
                                     placeholder="none"
                                 />
                                 English
-                            </LinkI18>
+                            </Link>
                         </li>
                     </ul>
                 </div>
