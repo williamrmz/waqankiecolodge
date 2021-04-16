@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Link } from "gatsby";
 
 import { Link as LinkI18, useTranslation, useI18next } from "gatsby-plugin-react-i18next";

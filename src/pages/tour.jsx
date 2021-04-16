@@ -1,7 +1,5 @@
 import React from "react";
 import "../styles/styles.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import HeaderTour from "../components/tour/HeaderTour";
