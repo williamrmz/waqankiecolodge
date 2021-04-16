@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 
 const Card = ({ image, title, description, rute }) => {
     let state = { rute, title };
 
-    localStorage.setItem("state", JSON.stringify(state));
+    // localStorage.setItem("state", JSON.stringify(state));
+
+    useEffect(() => {
+        const fetchData = () => {
+            localStorage.setItem("state", JSON.stringify(state));
+        };
+        fetchData();
+    }, []);
 
     return (
         <div className="position-relative m-2 tour-card-container w-75 h-15 tour-border">

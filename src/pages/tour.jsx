@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import HeaderTour from "../components/tour/HeaderTour";
@@ -10,15 +10,13 @@ import Guide from "../components/tour/guides/GuideCard";
 import GuideModal from "../components/tour/guides/GuideModal";
 
 const tour = () => {
-    let state = JSON.parse(localStorage.getItem("state"));
     return (
         <div className="container-fluid p-0">
             <Layout>
-                <HeaderTour tourSelect={state} />
+                <HeaderTour />
                 <main>
                     <Guide />
-                    <Tour tourSelect={state} />
-
+                    <Tour />
                     <GuideModal />
                 </main>
             </Layout>

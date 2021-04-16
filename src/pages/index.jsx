@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import Header from "../components/header/Header";
 import OurServices from "../components/ourservices/OurServices";

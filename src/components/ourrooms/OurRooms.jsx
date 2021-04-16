@@ -40,7 +40,7 @@ const OurRooms = () => {
         const fetchData = async () => {
             await obtainRoom();
         };
-        fetchData();
+        // fetchData();
         //eslint-disable-next-line
     }, []);
 

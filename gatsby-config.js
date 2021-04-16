@@ -6,7 +6,7 @@ module.exports = {
         title: "WAQANKI ECO LODGE",
         description: `Mas de 250 especies de orquídeas, plantas ornamentales, mirador para la observación de
     colibrís, senderos de observación de aves, mariposas, anfibios y la ruta del café.`,
-        // siteUrl: "https://kind-lichterman-5edcb4.netlify.app",
+        siteUrl: "https://kind-lichterman-5edcb4.netlify.app",
     },
     plugins: [
         "gatsby-plugin-image",
