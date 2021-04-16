@@ -16,21 +16,20 @@ const OurRooms = () => {
     });
 
     const obtainRoom = (e) => {
-        let carouselEl = document.getElementById("carouselRooms");
-        let carouselActive = carouselEl.getElementsByClassName("active")[0];
-        let roomini = carouselActive.getAttribute("room");
-        setReservation((prevState) => ({
-            ...prevState,
-            room: roomini,
-        }));
-
-        document.getElementById("carouselRooms").addEventListener("slid.bs.carousel", function (e) {
-            let room = document.getElementById("carouselRooms").getElementsByClassName("active")[0].getAttribute("room");
-            setReservation((prevState) => ({
-                ...prevState,
-                room,
-            }));
-        });
+        // let carouselEl = document.getElementById("carouselRooms");
+        // let carouselActive = carouselEl.getElementsByClassName("active")[0];
+        // let roomini = carouselActive.getAttribute("room");
+        // setReservation((prevState) => ({
+        //     ...prevState,
+        //     room: roomini,
+        // }));
+        // document.getElementById("carouselRooms").addEventListener("slid.bs.carousel", function (e) {
+        //     let room = document.getElementById("carouselRooms").getElementsByClassName("active")[0].getAttribute("room");
+        //     setReservation((prevState) => ({
+        //         ...prevState,
+        //         room,
+        //     }));
+        // });
     };
 
     const sendInfo = () => {
