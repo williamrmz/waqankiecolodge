@@ -2,77 +2,86 @@ import React from "react";
 import Colleccion from "./Colleccion";
 
 import { useTranslation, Trans } from "gatsby-plugin-react-i18next";
-import { graphql, useStaticQuery } from "gatsby";
-
 import roadIcon from "@iconify-icons/mdi/road";
 import birdIcon from "@iconify-icons/mdi/bird";
 import foodIcon from "@iconify-icons/mdi/food";
 import flowerTulip from "@iconify-icons/mdi/flower-tulip";
 import telescopeIcon from "@iconify-icons/mdi/telescope";
 import waterIcon from "@iconify-icons/mdi/water";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function OurServices() {
     const { t } = useTranslation();
-    const data = useStaticQuery(graphql`
-        query {
-            service1: file(relativePath: { eq: "service1.png" }) {
-                childImageSharp {
-                    gatsbyImageData(placeholder: NONE)
-                }
-                name
-            }
-            service2: file(relativePath: { eq: "service2.png" }) {
-                childImageSharp {
-                    gatsbyImageData(placeholder: NONE)
-                }
-                name
-            }
-            service3: file(relativePath: { eq: "service3.png" }) {
-                childImageSharp {
-                    gatsbyImageData(placeholder: NONE)
-                }
-                name
-            }
-            service4: file(relativePath: { eq: "service4.png" }) {
-                childImageSharp {
-                    gatsbyImageData(placeholder: NONE)
-                }
-                name
-            }
-            service5: file(relativePath: { eq: "service5.png" }) {
-                childImageSharp {
-                    gatsbyImageData(placeholder: NONE)
-                }
-                name
-            }
-            service6: file(relativePath: { eq: "service6.png" }) {
-                childImageSharp {
-                    gatsbyImageData(placeholder: NONE)
-                }
-                name
-            }
-        }
-    `);
+
+    const service1 = (
+        <StaticImage
+            className="service-background card-service"
+            src={"../../images/service1.png"}
+            alt="Facebook"
+            placeholder="none"
+        />
+    );
+    const service2 = (
+        <StaticImage
+            className="service-background card-service"
+            src={"../../images/service2.png"}
+            alt="Facebook"
+            placeholder="none"
+        />
+    );
+    const service3 = (
+        <StaticImage
+            className="service-background card-service"
+            src={"../../images/service3.png"}
+            alt="Facebook"
+            placeholder="none"
+        />
+    );
+    const service4 = (
+        <StaticImage
+            className="service-background card-service"
+            src={"../../images/service4.png"}
+            alt="Facebook"
+            placeholder="none"
+        />
+    );
+    const service5 = (
+        <StaticImage
+            className="service-background card-service"
+            src={"../../images/service5.png"}
+            alt="Facebook"
+            placeholder="none"
+        />
+    );
+    const service6 = (
+        <StaticImage
+            className="service-background card-service"
+            src={"../../images/service6.png"}
+            alt="Facebook"
+            placeholder="none"
+        />
+    );
+
     const arreglo1 = [
-        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon },
-        { titulo: t(`service2-titulo`), descripcion: t(`service2-descripcion`), imageUrl: data.service2, icon: birdIcon },
-        { titulo: t(`service3-titulo`), descripcion: t(`service3-descripcion`), imageUrl: data.service3, icon: foodIcon },
+        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: service1, icon: roadIcon },
+        { titulo: t(`service2-titulo`), descripcion: t(`service2-descripcion`), imageUrl: service2, icon: birdIcon },
+        { titulo: t(`service3-titulo`), descripcion: t(`service3-descripcion`), imageUrl: service3, icon: foodIcon },
     ];
     const arreglo2 = [
-        { titulo: t(`service4-titulo`), descripcion: t(`service4-descripcion`), imageUrl: data.service4, icon: flowerTulip },
-        { titulo: t(`service5-titulo`), descripcion: t(`service5-descripcion`), imageUrl: data.service5, icon: telescopeIcon },
-        { titulo: t(`service6-titulo`), descripcion: t(`service6-descripcion`), imageUrl: data.service6, icon: waterIcon },
+        { titulo: t(`service4-titulo`), descripcion: t(`service4-descripcion`), imageUrl: service4, icon: flowerTulip },
+        { titulo: t(`service5-titulo`), descripcion: t(`service5-descripcion`), imageUrl: service5, icon: telescopeIcon },
+        { titulo: t(`service6-titulo`), descripcion: t(`service6-descripcion`), imageUrl: service6, icon: waterIcon },
     ];
 
     const arreglosmActive = [
-        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon },
+        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: service1, icon: roadIcon },
     ];
     const arreglosm = [
-        { titulo: t(`service2-titulo`), descripcion: t(`service2-descripcion`), imageUrl: data.service2, icon: birdIcon },
-        { titulo: t(`service3-titulo`), descripcion: t(`service3-descripcion`), imageUrl: data.service3, icon: foodIcon },
-        { titulo: t(`service4-titulo`), descripcion: t(`service4-descripcion`), imageUrl: data.service4, icon: flowerTulip },
-        { titulo: t(`service5-titulo`), descripcion: t(`service5-descripcion`), imageUrl: data.service5, icon: telescopeIcon },
-        { titulo: t(`service6-titulo`), descripcion: t(`service6-descripcion`), imageUrl: data.service6, icon: waterIcon },
+        { titulo: t(`service2-titulo`), descripcion: t(`service2-descripcion`), imageUrl: service2, icon: birdIcon },
+        { titulo: t(`service3-titulo`), descripcion: t(`service3-descripcion`), imageUrl: service3, icon: foodIcon },
+        { titulo: t(`service4-titulo`), descripcion: t(`service4-descripcion`), imageUrl: service4, icon: flowerTulip },
+        { titulo: t(`service5-titulo`), descripcion: t(`service5-descripcion`), imageUrl: service5, icon: telescopeIcon },
+        { titulo: t(`service6-titulo`), descripcion: t(`service6-descripcion`), imageUrl: service6, icon: waterIcon },
     ];
     return (
         <section
