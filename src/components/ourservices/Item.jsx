@@ -10,6 +10,7 @@ const Item = ({ titulo, descripcion, imageUrl, icon }) => {
                 backgroundImage: 'url("' + getImage(imageUrl).images.fallback.src + '")',
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
+                height: '405px'
             }}
         >
             <div className="d-flex flex-column" style={{ color: "white" }}>

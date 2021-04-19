@@ -81,13 +81,22 @@ export default function OurServices() {
             }}
             id="servicios"
             className="position-relative py-5"
+          
         >
             <div className="container-fluid align-self-stretch mb-5">
-                <div className="d-flex justify-content-center">
+                <div className="d-flex justify-content-center" 
+                    data-sal="slide-down"
+                    data-sal-duration="1000" 
+                    data-sal-easing="ease"
+                    >
                     <h2 className="section-title">
                         <Trans>seccion-servicios</Trans>
                     </h2>
                 </div>
+                <div 
+                data-sal="slide-up"
+                data-sal-duration="1000" 
+                data-sal-easing="ease">
                 <div id="carouselServices" className="carousel slide d-none d-lg-block" data-bs-interval="false">
                     <div className="carousel-inner d-none d-lg-block">
                         <Colleccion clases={"active"} datos={arreglo1} />
@@ -137,6 +146,7 @@ export default function OurServices() {
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Next</span>
                     </button>
+                </div>
                 </div>
             </div>
         </section>

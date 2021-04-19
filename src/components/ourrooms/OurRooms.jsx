@@ -52,11 +52,17 @@ const OurRooms = () => {
     };
 
     return (
-        <section id="habitaciones" className="rooms-section d-flex flex-column w-100 justify-content-center align-items-center">
-            <div className="mb-4">
-                <h1 className="section-title">{t(`seccion-habitaciones`)}</h1>
+        <section id="habitaciones" className="rooms-section d-flex flex-column w-100 justify-content-center align-items-center pb-5">
+            <div className="my-4" 
+                    data-sal="slide-down"
+                    data-sal-duration="1000" 
+                    data-sal-easing="ease">
+                <h1 className="section-title mt-5">{t(`seccion-habitaciones`)}</h1>
             </div>
-            <div className="rooms-container d-flex m-0 p-0">
+            <div className="rooms-container d-flex m-0 p-0" 
+                data-sal="slide-up"
+                data-sal-duration="1000" 
+                data-sal-easing="ease">
                 <div className="rooms-in w-65 h-100 d-flex flex-column ">
                     <Carousel />
                 </div>
@@ -64,6 +70,7 @@ const OurRooms = () => {
                     <Form sendInfo={sendInfo} handleChange={handleChange} />
                 </div>
             </div>
+            
             <div className="rooms-container-wave">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" className="rooms-wave-svg">
                     <path

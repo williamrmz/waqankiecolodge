@@ -16,6 +16,12 @@ module.exports = {
         "gatsby-transformer-sharp",
         "gatsby-transformer-remark",
         {
+          resolve: `gatsby-plugin-scroll-reveal`,
+          options: {
+              once: false, // Defines if animation needs to be launched once
+          }
+        },
+        {
             resolve: "gatsby-source-filesystem",
             options: {
                 name: "images",

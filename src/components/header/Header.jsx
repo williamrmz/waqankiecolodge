@@ -16,10 +16,18 @@ const Header = () => {
     return (
         <header className="vh-100 w-100 header" id="inicio">
             <div className="h-100 d-flex justify-content-center align-items-center flex-column m-auto header-section">
-                <p className="h1 text-center text-white animate__animated animate__fadeInDown animate__slow">
+                <p className="h1 text-center text-white" 
+                    data-sal="slide-down"
+                    data-sal-duration="1000" 
+                    data-sal-delay="300"
+                    data-sal-easing="ease">
                     {data.site.siteMetadata.title}
                 </p>
-                <p className="h6 text-center text-white animate__animated animate__fadeInUp animate__slow">{t(`Descripcion`)}</p>
+                <p className="h6 text-center text-white" 
+                    data-sal="slide-up"
+                    data-sal-duration="1000" 
+                    data-sal-delay="300"
+                    data-sal-easing="ease">{t(`Descripcion`)}</p>
                 {/* <button
                     className="btn animate__animated animate__fadeInUp animate__slow animate__delay-1s"
                     style={{

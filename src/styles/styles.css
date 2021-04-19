@@ -116,6 +116,7 @@ html {
     background-color: #fff;
     border-radius: 50px;
     z-index: 2;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
 .rooms-carousel {
@@ -165,11 +166,39 @@ html {
 
 .catalogue-card {
     border-radius: 30px !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.catalogue-card-image {
+.catalogue-card-image{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+}
+
+.image-link-to:hover .catalogue-card-image{
+    filter: brightness(0.4) blur(1px);
+}
+
+.image-link-to:hover .btn-more-info{
+    display: block;
+}
+
+.btn-more-info{
+    position: absolute;
+    left: 33%;
+    top: 25%;
+    color: white;
+    border: solid 1px white;
+    padding: .1rem 1.4rem;
+    border-radius: 1rem;
+    display: none;
+}
+
+.btn-more-info span{
+    text-decoration: inherit; /* no underline */
+}
+
+.btn-more-info:hover{
+    color: white;
 }
 
 /* TOURS */
@@ -180,6 +209,8 @@ html {
 }
 .tour-container-card {
     width: 90%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .tour-border {
@@ -193,15 +224,17 @@ html {
     height: 100%;
     transition: 0.5s ease;
     backface-visibility: hidden;
-    filter: brightness(100%);
+    filter: brightness(0.6);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .tour-card-container {
-    height: 200px;
+    height: 500px;
+    cursor: pointer;
 }
 
 .tour-card-container:hover .tour-image {
-    filter: brightness(60%);
+    filter: brightness(0.4);
 }
 
 .tour-card-overlay {
@@ -411,6 +444,7 @@ ul.timeline > li:before {
     /* TOUR */
     .tour-container-card {
         width: 100%;
+        display: block;
     }
 
     .tour-card-container {

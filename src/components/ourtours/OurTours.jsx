@@ -4,21 +4,21 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const OurTours = () => {
     return (
-        <section id="tours" className="section-tours d-flex flex-column w-100 justify-content-center align-items-center pt-5">
-            <div className="mb-4 h-25 mt-5 pt-5 text-center text-white">
-                <h2 style={{ fontWeight: "bolder", fontSize: "2rem" }}>
+        <section id="tours" className="section-tours d-flex flex-column w-100 justify-content-center align-items-center">
+            <div className="mb-4 mt-5 text-center text-white" 
+                    data-sal="slide-down"
+                    data-sal-duration="1000" 
+                    data-sal-delay="300"
+                    data-sal-easing="ease">
+                <h2 style={{ fontWeight: "bolder", fontSize: "2rem" }} >
                     Nuestros <strong>Tours</strong>
                 </h2>
-                {/* <p>Ideal para excursiones en plena naturaleza y visitar lugares turísticos en lo mas profundo de la selva.</p> */}
-                <StaticImage
-                    style={{ width: "300px", height: "294px", margin: "auto", marginTop: "1rem" }}
-                    src={"../../images/ourTours.png"}
-                    alt="ourTours"
-                />
+                <p>Ideal para excursiones en plena naturaleza y visitar lugares turísticos en lo mas profundo de la selva.</p>
             </div>
 
-            <div className="tour-container-card h-75 d-flex flex-column align-items-center">
+            <div className="tour-container-card">
                 <Card
+                    delay="300"
                     image={
                         <StaticImage
                             className="tour-border tour-image"
@@ -34,6 +34,7 @@ const OurTours = () => {
                     rute={"main"}
                 />
                 <Card
+                    delay="500"
                     image={
                         <StaticImage
                             className="tour-border tour-image"
@@ -49,6 +50,7 @@ const OurTours = () => {
                     rute={"scarlet"}
                 />
                 <Card
+                    delay="700"
                     image={
                         <StaticImage
                             className="tour-border tour-image"
@@ -64,6 +66,7 @@ const OurTours = () => {
                     rute={"white"}
                 />
                 <Card
+                    delay="900"
                     image={
                         <StaticImage
                             className="tour-border tour-image"
