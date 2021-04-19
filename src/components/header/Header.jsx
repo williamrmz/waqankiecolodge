@@ -14,9 +14,10 @@ const Header = () => {
             }
         }
     `);
+
     return (
         <header className="vh-100 w-100 header" id="inicio">
-            <StaticImage className="header-background" src={"../../images/bg.png"} alt="Facebook" placeholder="none" />
+            <StaticImage className="header-background" src={"../../images/bg.png"} alt="Background" placeholder="none" />
             <div className="h-100 d-flex justify-content-center align-items-center flex-column m-auto header-section">
                 <p
                     className="h1 text-center text-white"
