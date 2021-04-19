@@ -3,11 +3,13 @@ import "../styles/styles.css";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Gallery from "../components/bird/Gallery";
+import Seo from "../components/Seo";
 
 const birds = () => {
     return (
         <div className="container-fluid p-0">
             <Layout>
+                <Seo title={"Aves"} />
                 <main>
                     <Gallery />
                 </main>

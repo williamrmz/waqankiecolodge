@@ -8,12 +8,14 @@ import Catalogue from "../components/ourcatalogues/OurCatalogues";
 import PromocionalVideo from "../components/promocionalvideo/PromocionalVideo";
 import OurTours from "../components/ourtours/OurTours";
 import { graphql } from "gatsby";
+import Seo from "../components/Seo";
 import Layout from "../components/Layout";
 
 const IndexPage = () => {
     return (
         <div className="container-fluid p-0">
             <Layout>
+                <Seo title={"Waqanki"} />
                 <Header />
                 <main>
                     <OurServices />

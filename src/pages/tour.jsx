@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/styles.css";
 import { graphql } from "gatsby";
+import Seo from "../components/Seo";
 import Layout from "../components/Layout";
 import HeaderTour from "../components/tour/HeaderTour";
 import Tour from "../components/tour/Tour";
@@ -11,6 +12,7 @@ const tour = () => {
     return (
         <div className="container-fluid p-0">
             <Layout>
+                <Seo title={"Tour"} />
                 <HeaderTour />
                 <main>
                     <Guide />
