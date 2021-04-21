@@ -2,11 +2,13 @@ const path = require(`path`);
 const { languages, defaultLanguage } = require("./languages");
 
 module.exports = {
+    pathPrefix: "/waqankiecolodge",
     siteMetadata: {
         title: "WAQANKI ECO LODGE",
-        description: `Mas de 250 especies de orquídeas, plantas ornamentales, mirador para la observación de
-    colibrís, senderos de observación de aves, mariposas, anfibios y la ruta del café.`,
-        // siteUrl: "https://kind-lichterman-5edcb4.netlify.app",
+        description: `Hotel Ecolodge Waqanki. Ofrece servicios de guiado para avistamiento de aves y reservorio de orquídeas, además, puedes conocer distintos
+                      puntos turísticos.`,
+        siteUrl: "https://github.com/williamrmz",
+        author: `@William_RMz`,
     },
     plugins: [
         "gatsby-plugin-image",
@@ -14,6 +16,12 @@ module.exports = {
         "gatsby-plugin-sass",
         "gatsby-transformer-sharp",
         "gatsby-transformer-remark",
+        {
+            resolve: `gatsby-plugin-scroll-reveal`,
+            options: {
+                once: false, // Defines if animation needs to be launched once
+            },
+        },
         {
             resolve: "gatsby-source-filesystem",
             options: {

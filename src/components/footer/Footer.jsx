@@ -1,17 +1,15 @@
 import React from "react";
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import mapMarker from "@iconify-icons/mdi/map-marker";
 import emailMultiple from "@iconify-icons/mdi/email-multiple";
 import phoneIcon from "@iconify-icons/mdi/phone";
 
-import { Link } from "gatsby";
-
-import { Link as LinkI18, useTranslation, useI18next } from "gatsby-plugin-react-i18next";
+// import { Link as LinkI18, useTranslation, useI18next } from "gatsby-plugin-react-i18next";
 import { StaticImage } from "gatsby-plugin-image";
 
 const NavBar = () => {
-    const { language, originalPath } = useI18next();
-    const { t } = useTranslation();
+    // const { language, originalPath } = useI18next();
+    // const { t } = useTranslation();
     return (
         <section className="section-footer text-white">
             <div className="row">
@@ -28,8 +26,8 @@ const NavBar = () => {
                         <Icon style={{ opacity: ".7" }} className="col-3" icon={emailMultiple} width="55" height="55" />
                         <div className="col-9">
                             <h6 className="fw-bold">Correos</h6>
-                            <label className="d-flex">reservas@waqankilodge.pe</label>
-                            <label className="d-flex">waqankireservas@hotmail.com</label>
+                            <span className="d-flex">reservas@waqankilodge.pe</span>
+                            <span className="d-flex">waqankireservas@hotmail.com</span>
                             <p>birdinnmoyo@gmail.com</p>
                         </div>
                     </div>
@@ -37,9 +35,9 @@ const NavBar = () => {
                         <Icon style={{ opacity: ".7" }} className="col-3" icon={phoneIcon} width="55" height="55" />
                         <div className="col-9">
                             <h6 className="fw-bold">Teléfonos</h6>
-                            <label className="d-flex">+51 964 785 853</label>
-                            <label className="d-flex">+51 964 016 947</label>
-                            <label className="d-flex">+51 956 034 628</label>
+                            <span className="d-flex">+51 964 785 853</span>
+                            <span className="d-flex">+51 964 016 947</span>
+                            <span className="d-flex">+51 956 034 628</span>
                         </div>
                     </div>
                 </div>
@@ -71,6 +69,7 @@ const NavBar = () => {
                         <h5 className="fw-bold pb-3">UBÍCANOS</h5>
                         <div>
                             <iframe
+                                title="Promocional Video"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.186740028314!2d-76.9748769638866!3d-6.074369526224734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b73a9ccd06e39b%3A0x2696e92846e6fb49!2sOrquidario+Wakanki%2C+Moyobamba!5e0!3m2!1ses-419!2spe!4v1507416439830"
                                 width="100%"
                                 height="270"

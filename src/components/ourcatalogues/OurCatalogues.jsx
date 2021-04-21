@@ -1,22 +1,41 @@
 import React from "react";
 import Card from "./Card";
 import { StaticImage } from "gatsby-plugin-image";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 const OurCatalogues = () => {
+    const { t } = useTranslation();
     const imagebird = (
-        <StaticImage className="h-50 catalogue-card-image" src={"../../images/Buff_tailed_skilebill.jpg"} alt="card-bird" />
+        <StaticImage
+            className="catalogue-card-image"
+            src={"../../images/Buff_tailed_skilebill.jpg"}
+            alt="card-bird"
+            placeholder="none"
+            style={{margin: '-1px'}}
+        />
     );
 
     const imageflower = (
-        <StaticImage className="h-50 catalogue-card-image" src={"../../images/Rufous_crested_coquette.jpg"} alt="card-flower" />
+        <StaticImage
+            className="catalogue-card-image"
+            src={"../../images/Rufous_crested_coquette.jpg"}
+            alt="card-flower"
+            placeholder="none"
+            style={{margin: '-1px'}}
+        />
     );
     return (
-        <section id="catalogos" className="d-flex flex-column w-100 justify-content-center align-items-center section-cataloge">
-            <div className="mb-4">
-                <h1>Nuestros CATÁLOGOS</h1>
+        <section id="catalogos" className="d-flex flex-column h-100 justify-content-center align-items-center section-cataloge pb-5">
+            <div className="mb-5" 
+                    data-sal="slide-down"
+                    data-sal-duration="1000" 
+                    data-sal-delay="300"
+                    data-sal-easing="ease">
+                <h1 className="section-title text-white">{t(`seccion-catalogues`)}</h1>
             </div>
-            <div className="container-catalogue container d-flex justify-content-evenly h-75">
+            <div className="container-catalogue container d-flex justify-content-evenly h-70">
                 <Card
+                    direction="right"
                     image={imagebird}
                     title={"CATÁLOGO DE AVES"}
                     description={
@@ -25,6 +44,7 @@ const OurCatalogues = () => {
                     ruta={"aves"}
                 />
                 <Card
+                    direction="left"
                     image={imageflower}
                     title={"CATÁLOGO DE ORQUÍDEAS"}
                     description={
