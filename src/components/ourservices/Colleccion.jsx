@@ -11,7 +11,7 @@ const Colleccion = ({ clases, datos }) => {
                             key={i}
                             titulo={service.titulo}
                             descripcion={service.descripcion}
-                            imagen={service.imageUrl}
+                            imagen={service.image}
                             icon={service.icon}
                         />
                     );

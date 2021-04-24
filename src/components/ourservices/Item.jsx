@@ -1,20 +1,16 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { StaticImage, getImage } from 'gatsby-plugin-image';
 
 const Item = ({ titulo, descripcion, imagen, icon }) => {
 	return (
 		<div
-			className="position-relative d-flex align-items-center justify-content-center card-service"
+			className="position-relative d-flex align-items-center justify-content-center card-service-container"
 			style={{
 				height: '405px',
 			}}
 		>
-			<GatsbyImage
-				className="service-background card-service "
-				image={getImage(imagen)}
-				alt={'sadasdas'}
-			/>
+			{imagen}
 
 			<div
 				className="d-flex flex-column align-items-center justify-content-center text-center"

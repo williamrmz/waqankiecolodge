@@ -10,6 +10,7 @@ import foodIcon from "@iconify-icons/mdi/food";
 import flowerTulip from "@iconify-icons/mdi/flower-tulip";
 import telescopeIcon from "@iconify-icons/mdi/telescope";
 import waterIcon from "@iconify-icons/mdi/water";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function OurServices() {
     const { t } = useTranslation();
@@ -54,26 +55,26 @@ export default function OurServices() {
         }
     `);
     const arreglo1 = [
-        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon },
-        { titulo: t(`service2-titulo`), descripcion: t(`service2-descripcion`), imageUrl: data.service2, icon: birdIcon },
-        { titulo: t(`service3-titulo`), descripcion: t(`service3-descripcion`), imageUrl: data.service3, icon: foodIcon },
+        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), image: <StaticImage className="service-background card-service" src={"../../images/service1.png"} alt="Luna" placeholder="none" />, icon: roadIcon },
+        { titulo: t(`service2-titulo`), descripcion: t(`service2-descripcion`), image: <StaticImage className="service-background card-service" src={"../../images/service2.png"} alt="Luna" placeholder="none" />, icon: birdIcon },
+        { titulo: t(`service3-titulo`), descripcion: t(`service3-descripcion`), image: <StaticImage className="service-background card-service" src={"../../images/service3.png"} alt="Luna" placeholder="none" />, icon: foodIcon },
     ];
 
     const arreglo2 = [
-        { titulo: t(`service4-titulo`), descripcion: t(`service4-descripcion`), imageUrl: data.service4, icon: flowerTulip },
-        { titulo: t(`service5-titulo`), descripcion: t(`service5-descripcion`), imageUrl: data.service5, icon: telescopeIcon },
-        { titulo: t(`service6-titulo`), descripcion: t(`service6-descripcion`), imageUrl: data.service6, icon: waterIcon },
+        { titulo: t(`service4-titulo`), descripcion: t(`service4-descripcion`), image: <StaticImage className="service-background card-service" src={"../../images/service4.png"} alt="Luna" placeholder="none" />, icon: flowerTulip },
+        { titulo: t(`service5-titulo`), descripcion: t(`service5-descripcion`), image: <StaticImage className="service-background card-service" src={"../../images/service5.png"} alt="Luna" placeholder="none" />, icon: telescopeIcon },
+        { titulo: t(`service6-titulo`), descripcion: t(`service6-descripcion`), image: <StaticImage className="service-background card-service" src={"../../images/service6.png"} alt="Luna" placeholder="none" />, icon: waterIcon },
     ];
 
     const arreglosmActive = [
-        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), imageUrl: data.service1, icon: roadIcon },
+        { titulo: t(`service1-titulo`), descripcion: t(`service1-descripcion`), image: <StaticImage className="service-background card-service" src={"../../images/service1.png"} alt="Luna" placeholder="none" />, icon: roadIcon },
     ];
     const arreglosm = [
-        { titulo: t(`service2-titulo`), descripcion: t(`service2-descripcion`), imageUrl: data.service2, icon: birdIcon },
-        { titulo: t(`service3-titulo`), descripcion: t(`service3-descripcion`), imageUrl: data.service3, icon: foodIcon },
-        { titulo: t(`service4-titulo`), descripcion: t(`service4-descripcion`), imageUrl: data.service4, icon: flowerTulip },
-        { titulo: t(`service5-titulo`), descripcion: t(`service5-descripcion`), imageUrl: data.service5, icon: telescopeIcon },
-        { titulo: t(`service6-titulo`), descripcion: t(`service6-descripcion`), imageUrl: data.service6, icon: waterIcon },
+        { titulo: t(`service2-titulo`), descripcion: t(`service2-descripcion`), image: <StaticImage className="service-background card-service" src={"../../images/service2.png"} alt="Luna" placeholder="none" />, icon: birdIcon },
+        { titulo: t(`service3-titulo`), descripcion: t(`service3-descripcion`), image: <StaticImage className="service-background card-service" src={"../../images/service3.png"} alt="Luna" placeholder="none" />, icon: foodIcon },
+        { titulo: t(`service4-titulo`), descripcion: t(`service4-descripcion`), image: <StaticImage className="service-background card-service" src={"../../images/service4.png"} alt="Luna" placeholder="none" />, icon: flowerTulip },
+        { titulo: t(`service5-titulo`), descripcion: t(`service5-descripcion`), image: <StaticImage className="service-background card-service" src={"../../images/service5.png"} alt="Luna" placeholder="none" />, icon: telescopeIcon },
+        { titulo: t(`service6-titulo`), descripcion: t(`service6-descripcion`), image: <StaticImage className="service-background card-service" src={"../../images/service6.png"} alt="Luna" placeholder="none" />, icon: waterIcon },
     ];
     return (
         <section
