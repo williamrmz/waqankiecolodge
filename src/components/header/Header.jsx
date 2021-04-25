@@ -37,17 +37,6 @@ const Header = () => {
 				>
 					{t(`Descripcion`)}
 				</p>
-				{/* <button
-                    className="btn animate__animated animate__fadeInUp animate__slow animate__delay-1s"
-                    style={{
-                        marginTop: "1rem",
-                        backgroundColor: "#FDCA30",
-                        padding: ".3rem 5rem",
-                        borderRadius: "2rem",
-                    }}
-                >
-                    {t(`Ir`)}
-                </button> */}
 			</div>
 			<div className="header-wave hw-first">
 				<svg viewBox="0 0 500 150" preserveAspectRatio="none" className="h-100 w-100">

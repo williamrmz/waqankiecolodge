@@ -1,6 +1,5 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-import { StaticImage, getImage } from 'gatsby-plugin-image';
 
 const Item = ({ titulo, descripcion, imagen, icon }) => {
 	return (

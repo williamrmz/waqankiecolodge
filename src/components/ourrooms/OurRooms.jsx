@@ -26,11 +26,7 @@ const OurRooms = () => {
 		document.getElementById('carouselRooms').addEventListener(
 			'slid.bs.carousel',
 			function (e) {
-				e.preventDefault();
-				let room = document
-					.getElementById('carouselRooms')
-					.getElementsByClassName('active')[0]
-					.getAttribute('room');
+				let room = document.getElementById('carouselRooms').getElementsByClassName('active')[0].getAttribute('room');
 				setReservation((prevState) => ({
 					...prevState,
 					room,
