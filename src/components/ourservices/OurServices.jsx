@@ -19,19 +19,35 @@ export default function OurServices() {
 		{
 			titulo: t(`service1-titulo`),
 			descripcion: t(`service1-descripcion`),
-			image: <StaticImage className={classImage} src={'../../images/service1.png'} alt="Luna" placeholder="none" />,
+			image: (
+				<StaticImage className={classImage} src={'../../images/services-jardin.jpg'} alt="Luna" placeholder="none" />
+			),
 			icon: roadIcon,
 		},
 		{
 			titulo: t(`service2-titulo`),
 			descripcion: t(`service2-descripcion`),
-			image: <StaticImage className={classImage} src={'../../images/service2.png'} alt="Luna" placeholder="none" />,
+			image: (
+				<StaticImage
+					className={classImage}
+					src={'../../images/services-observatorio.jpg'}
+					alt="Luna"
+					placeholder="none"
+				/>
+			),
 			icon: birdIcon,
 		},
 		{
 			titulo: t(`service3-titulo`),
 			descripcion: t(`service3-descripcion`),
-			image: <StaticImage className={classImage} src={'../../images/service3.png'} alt="Luna" placeholder="none" />,
+			image: (
+				<StaticImage
+					className={classImage}
+					src={'../../images/services-alojamiento.jpg'}
+					alt="Luna"
+					placeholder="none"
+				/>
+			),
 			icon: foodIcon,
 		},
 	];
@@ -40,19 +56,25 @@ export default function OurServices() {
 		{
 			titulo: t(`service4-titulo`),
 			descripcion: t(`service4-descripcion`),
-			image: <StaticImage className={classImage} src={'../../images/service4.png'} alt="Luna" placeholder="none" />,
+			image: (
+				<StaticImage className={classImage} src={'../../images/services-cafe.jpg'} alt="Luna" placeholder="none" />
+			),
 			icon: flowerTulip,
 		},
 		{
 			titulo: t(`service5-titulo`),
 			descripcion: t(`service5-descripcion`),
-			image: <StaticImage className={classImage} src={'../../images/service5.png'} alt="Luna" placeholder="none" />,
+			image: (
+				<StaticImage className={classImage} src={'../../images/services-trochas.jpg'} alt="Luna" placeholder="none" />
+			),
 			icon: telescopeIcon,
 		},
 		{
 			titulo: t(`service6-titulo`),
 			descripcion: t(`service6-descripcion`),
-			image: <StaticImage className={classImage} src={'../../images/service6.png'} alt="Luna" placeholder="none" />,
+			image: (
+				<StaticImage className={classImage} src={'../../images/services-caminatas.jpg'} alt="Luna" placeholder="none" />
+			),
 			icon: waterIcon,
 		},
 	];
@@ -108,15 +130,17 @@ export default function OurServices() {
 			<div className="container-fluid align-self-stretch mb-5">
 				<div
 					className="d-flex justify-content-center"
-					data-sal="slide-down"
-					data-sal-duration="1000"
-					data-sal-easing="ease"
+					// data-sal="slide-down"
+					// data-sal-duration="1000"
+					// data-sal-easing="ease"
 				>
 					<h2 className="section-title">
 						<Trans>seccion-servicios</Trans>
 					</h2>
 				</div>
-				<div data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease">
+				<div
+				// data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease"
+				>
 					<div id="carouselServices" className="carousel slide d-none d-lg-block" data-bs-interval="false">
 						<div className="carousel-inner d-none d-lg-block">
 							<Colleccion clases={'active'} datos={arreglo1} />

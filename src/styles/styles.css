@@ -139,12 +139,13 @@ html {
 }
 
 .room-img {
-	height: 80%;
+	height: 75%;
 	width: 100%;
 }
 
 .room-container {
-	background-color: #288b17;
+	/* background-color: #288b17; */
+	background-color: #212529;
 	color: #fff;
 }
 
