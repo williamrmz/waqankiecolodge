@@ -8,15 +8,19 @@ import Tour from "../components/tour/Tour";
 import Guide from "../components/tour/guides/GuideCard";
 import GuideModal from "../components/tour/guides/GuideModal";
 
-const tour = () => {
+const tour = ({ location }) => {
+    if (location.state === null) return (window.location = "/");
+
+    const { rute, title } = location.state;
+
     return (
         <div className="container-fluid p-0">
             <Layout>
-                <Seo title={"Tour"} />
-                <HeaderTour />
+                <Seo />
+                <HeaderTour title={title} />
                 <main>
                     <Guide />
-                    <Tour />
+                    <Tour title={title} rute={rute} />
                     <GuideModal />
                 </main>
             </Layout>
@@ -26,7 +30,9 @@ const tour = () => {
 
 export const query = graphql`
     query($language: String!) {
-        locales: allLocale(filter: { ns: { in: ["tour"] }, language: { eq: $language } }) {
+        locales: allLocale(
+            filter: { ns: { in: ["tour"] }, language: { eq: $language } }
+        ) {
             edges {
                 node {
                     ns
