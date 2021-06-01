@@ -178,6 +178,12 @@ html {
     fill: #3fb54b;
 }
 
+/* CATALOGUES */
+
+.catologue-section {
+    height: 100vh;
+}
+
 .catalogue-card {
     border-radius: 30px !important;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -188,7 +194,16 @@ html {
     border-top-right-radius: 30px;
 }
 
+.catalogue-card-imageinverse {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
 .image-link-to:hover .catalogue-card-image {
+    filter: brightness(0.4) blur(1px);
+}
+
+.image-link-to:hover .catalogue-card-imageinverse {
     filter: brightness(0.4) blur(1px);
 }
 
@@ -212,6 +227,31 @@ html {
 }
 
 .btn-more-info:hover {
+    color: white;
+}
+
+/* asdddddddddddasd */
+
+.image-link-to:hover .btn-more-info-inverse {
+    display: block;
+}
+
+.btn-more-info-inverse {
+    position: absolute;
+    left: 33%;
+    top: 75%;
+    color: white;
+    border: solid 1px white;
+    padding: 0.1rem 1.4rem;
+    border-radius: 1rem;
+    display: none;
+}
+
+.btn-more-info-inverse span {
+    text-decoration: inherit; /* no underline */
+}
+
+.btn-more-info-inverse:hover {
     color: white;
 }
 
