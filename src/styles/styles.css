@@ -613,3 +613,8 @@ ul.timeline > li:before {
         height: 50px;
     }
 }
+
+.btn-landing{
+    border-radius: 2rem;
+    margin: 1.5rem 0;
+}
