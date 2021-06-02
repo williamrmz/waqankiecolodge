@@ -618,3 +618,8 @@ ul.timeline > li:before {
     border-radius: 2rem;
     margin: 1.5rem 0;
 }
+
+.btn-service{    
+    border: solid 1px white;
+    border-radius: 2rem;
+}
