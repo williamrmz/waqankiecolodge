@@ -43,7 +43,7 @@ const Header = () => {
                 >
                     {/* {t(`Descripcion`)} */}
                     <button
-                        className="btn btn-dark"
+                        className="btn btn-warning"
                         data-bs-toggle="modal"
                         data-bs-target={`#description-hotel`}
                     >
