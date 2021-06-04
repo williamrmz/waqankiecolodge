@@ -11,26 +11,24 @@ import GuideModal from '../components/tour/guides/GuideModal';
 const tour = ({ location }) => {
 	if (location.state === null) {
 		return (window.location = '/');
-	} else {
-		const rute = location?.state?.rute || 'main';
-		const title = location?.state?.title || 'no title';
-
-		return (
-			<div className="container-fluid p-0">
-				<Layout>
-					<Seo />
-					<HeaderTour title={title} />
-					<main>
-						<Guide />
-						<Tour title={title} rute={rute} />
-						<GuideModal />
-					</main>
-				</Layout>
-			</div>
-		);
 	}
 
-	return <div>loading....</div>;
+	const rute = location?.state?.rute || 'main';
+	const title = location?.state?.title || 'no title';
+
+	return (
+		<div className="container-fluid p-0">
+			<Layout>
+				<Seo />
+				<HeaderTour title={title} />
+				<main>
+					<Guide />
+					<Tour title={title} rute={rute} />
+					<GuideModal />
+				</main>
+			</Layout>
+		</div>
+	);
 };
 
 export const query = graphql`
