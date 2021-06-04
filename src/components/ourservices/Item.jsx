@@ -21,7 +21,7 @@ const Item = ({ index, titulo, imagen, icon }) => {
                     <h4 className="fw-bold my-2">{titulo}</h4>
                     <Icon icon={icon} className="m-auto my-2" width="2em" height="2em" />
                     <div
-                        className="btn btn-success"
+                        className="btn btn-outline btn-service"
                         data-bs-toggle="modal"
                         data-bs-target={`#description-service-${index}`}
                     >
