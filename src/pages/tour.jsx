@@ -11,7 +11,8 @@ import GuideModal from "../components/tour/guides/GuideModal";
 const tour = ({ location }) => {
     if (location.state === null) return (window.location = "/");
 
-    const { rute, title } = location.state;
+    const rute = location.state.rute || "main";
+    const title = location.state.title || "no title";
 
     return (
         <div className="container-fluid p-0">
@@ -20,7 +21,7 @@ const tour = ({ location }) => {
                 <HeaderTour title={title} />
                 <main>
                     <Guide />
-                    <Tour title={title} rute={rute} />
+                    <Tour rute={rute} />
                     <GuideModal />
                 </main>
             </Layout>
