@@ -5,8 +5,8 @@ import eyeOutline from "@iconify-icons/mdi/eye-outline";
 
 const Card = ({ image, title, description, ruta, direction }) => {
     return (
-        <div className="card position-relative h-100 w-35 catalogue-card text-center">
-            <div className="image-link-to h-50">
+        <div className="card h-100 w-30 catalogue-card text-center">
+            <div className="image-link-to h-50 d-flex justify-content-center">
                 {image}
                 <div
                     className="btn-more-info"
@@ -15,10 +15,8 @@ const Card = ({ image, title, description, ruta, direction }) => {
                     data-sal-easing="ease"
                 >
                     <Link to={`/${ruta}`} style={{ textDecoration: "none" }}>
-                        <span className="text-white" style={{ marginRight: "1rem" }}>
-                            Ver más
-                        </span>
-                        <Icon icon={eyeOutline} className="ml-2 text-white" />
+                        <span className="text-white me-2">Ver más</span>
+                        <Icon icon={eyeOutline} className="text-white" />
                     </Link>
                 </div>
             </div>

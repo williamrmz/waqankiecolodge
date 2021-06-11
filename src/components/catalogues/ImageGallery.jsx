@@ -1,24 +1,8 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const ImageGallery = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            infoaves: allFile(filter: { sourceInstanceName: { eq: "aves" } }) {
-                edges {
-                    node {
-                        childImageSharp {
-                            gatsbyImageData(placeholder: BLURRED)
-                        }
-                        id
-                        name
-                    }
-                }
-            }
-        }
-    `);
-
+const ImageGallery = ({ data }) => {
     const compare = (a, b) => {
         // Use toUpperCase() to ignore character casing
         const nameA = a.node.name.toUpperCase();
@@ -36,7 +20,7 @@ const ImageGallery = () => {
     return (
         <>
             {/* {console.log(data.infoaves.edges.sort(compare))} */}
-            {data.infoaves.edges.sort(compare).map((ave) => (
+            {data.info.edges.sort(compare).map((ave) => (
                 <div key={ave.node.id} className="col-lg-4 col-md-4 col-12">
                     <div className="d-block mb-4 h-100">
                         <span className="text-white">{ave.node.name}</span>

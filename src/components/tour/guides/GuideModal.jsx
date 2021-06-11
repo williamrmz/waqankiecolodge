@@ -27,16 +27,15 @@ const GuideModal = () => {
                         <div>
                             <StaticImage
                                 className="my-3 w-100"
-                                src={"../../../images/tour1.jpg"}
+                                src={"../../../images/guia.jpg"}
                                 alt="Luna 1"
                             />
                             <span className="text-center">
-                                Carlos is native from Moyobamba He has a degree of
-                                environmental engineer and another of oficial tour guide,
-                                he specializes guiding the all Peru birding Circuit and
-                                some other contries of South America (Ecuador, Colombia,
-                                Brazil and Bolivia). He also has a broad knowledge in
-                                other fauna and Orchids. Carlos is fluent in English,
+                                Carlos is native from Moyobamba He has a degree of environmental
+                                engineer and another of oficial tour guide, he specializes guiding
+                                the all Peru birding Circuit and some other contries of South
+                                America (Ecuador, Colombia, Brazil and Bolivia). He also has a broad
+                                knowledge in other fauna and Orchids. Carlos is fluent in English,
                                 Spanish and Portuguesse.
                             </span>
                         </div>

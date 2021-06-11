@@ -43,7 +43,7 @@ const Header = () => {
                 >
                     {/* {t(`Descripcion`)} */}
                     <button
-                        className="btn btn-dark"
+                        className="btn btn-warning btn-landing"
                         data-bs-toggle="modal"
                         data-bs-target={`#description-hotel`}
                     >
@@ -52,11 +52,7 @@ const Header = () => {
                 </p>
             </div>
             <div className="header-wave hw-first">
-                <svg
-                    viewBox="0 0 500 150"
-                    preserveAspectRatio="none"
-                    className="h-100 w-100"
-                >
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" className="h-100 w-100">
                     <path
                         d="M-18.34,96.20 C174.09,44.89 372.74,185.03 501.97,116.94 L500.00,150.00 L0.00,150.00 Z"
                         style={{
@@ -68,11 +64,7 @@ const Header = () => {
                 </svg>
             </div>
             <div className="header-wave hw-second">
-                <svg
-                    viewBox="0 0 500 150"
-                    preserveAspectRatio="none"
-                    className="h-100 w-100"
-                >
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" className="h-100 w-100">
                     <path
                         d="M-18.34,96.20 C174.09,44.89 372.74,185.03 501.97,116.94 L500.00,150.00 L0.00,150.00 Z"
                         style={{
@@ -84,11 +76,7 @@ const Header = () => {
                 </svg>
             </div>
             <div className="header-wave hw-third">
-                <svg
-                    viewBox="0 0 500 150"
-                    preserveAspectRatio="none"
-                    className="h-100 w-100"
-                >
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" className="h-100 w-100">
                     <path
                         d="M-18.34,96.20 C174.09,44.89 372.74,185.03 501.97,116.94 L500.00,150.00 L0.00,150.00 Z"
                         style={{ stroke: "none", fill: "#EEEEEE" }}

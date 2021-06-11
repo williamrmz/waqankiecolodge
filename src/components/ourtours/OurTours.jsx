@@ -4,25 +4,33 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const OurTours = () => {
     return (
-        <section id="tours" className="section-tours d-flex flex-column w-100 justify-content-center align-items-center">
-            <div className="mb-4 mt-5 text-center text-white" 
-                    data-sal="slide-down"
-                    data-sal-duration="1000" 
-                    data-sal-delay="300"
-                    data-sal-easing="ease">
-                <h2 style={{ fontWeight: "bolder", fontSize: "2rem" }} >
+        <section
+            id="tours"
+            className="section-tours d-flex flex-column w-100 justify-content-center align-items-center"
+        >
+            <div
+                className="mb-4 mt-5 text-center text-white"
+                data-sal="slide-down"
+                data-sal-duration="700"
+                // data-sal-delay="300"
+                data-sal-easing="ease"
+            >
+                <h2 style={{ fontWeight: "bolder", fontSize: "2rem" }}>
                     Nuestros <strong>Tours</strong>
                 </h2>
-                <p>Ideal para excursiones en plena naturaleza y visitar lugares turísticos en lo mas profundo de la selva.</p>
+                <p>
+                    Ideal para excursiones en plena naturaleza y visitar lugares turísticos en lo
+                    mas profundo de la selva.
+                </p>
             </div>
 
             <div className="tour-container-card">
                 <Card
-                    delay="300"
+                    delay="150"
                     image={
                         <StaticImage
                             className="tour-border tour-image"
-                            src={"../../images/tour1.jpg"}
+                            src={"../../images/tour_main.jpg"}
                             alt="Luna 1"
                             placeholder="none"
                         />
@@ -34,11 +42,11 @@ const OurTours = () => {
                     rute={"main"}
                 />
                 <Card
-                    delay="500"
+                    delay="300"
                     image={
                         <StaticImage
                             className="tour-border tour-image"
-                            src={"../../images/tour2.jpg"}
+                            src={"../../images/tour_scarlet.jpg"}
                             alt="Luna 2"
                             placeholder="none"
                         />
@@ -50,11 +58,11 @@ const OurTours = () => {
                     rute={"scarlet"}
                 />
                 <Card
-                    delay="700"
+                    delay="450"
                     image={
                         <StaticImage
                             className="tour-border tour-image"
-                            src={"../../images/tour3.jpg"}
+                            src={"../../images/tour_white.jpg"}
                             alt="Luna 3"
                             placeholder="none"
                         />
@@ -66,11 +74,11 @@ const OurTours = () => {
                     rute={"white"}
                 />
                 <Card
-                    delay="900"
+                    delay="600"
                     image={
                         <StaticImage
                             className="tour-border tour-image"
-                            src={"../../images/tour4.jpg"}
+                            src={"../../images/tour_yellow.jpg"}
                             alt="Luna 4"
                             placeholder="none"
                         />

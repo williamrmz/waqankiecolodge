@@ -20,9 +20,7 @@ const birds = () => {
 
 export const query = graphql`
     query($language: String!) {
-        locales: allLocale(
-            filter: { ns: { in: ["aves"] }, language: { eq: $language } }
-        ) {
+        locales: allLocale(filter: { ns: { in: ["aves"] }, language: { eq: $language } }) {
             edges {
                 node {
                     ns
