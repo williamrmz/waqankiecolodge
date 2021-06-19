@@ -3,7 +3,7 @@ import { Link } from "gatsby-plugin-react-i18next"; // npm install --save-dev @i
 import { Icon } from "@iconify/react";
 import eyeOutline from "@iconify-icons/mdi/eye-outline";
 
-const Card = ({ image, title, description, ruta, direction }) => {
+const Card = ({ image, title, description, ruta }) => {
     return (
         <div className="card h-100 w-30 catalogue-card text-center">
             <div className="image-link-to h-50 d-flex justify-content-center">

@@ -63,7 +63,7 @@ const Form = ({ sendInfo, handleChange }) => {
                 />
 
                 <button type="button" className="btn btn-dark w-75" onClick={() => sendInfo()}>
-                    RESERVAR
+                    {t("boton-reserve")}
                 </button>
             </div>
         </form>

@@ -4,7 +4,7 @@ const { languages, defaultLanguage } = require("./languages");
 module.exports = {
     pathPrefix: "/waqankiecolodge",
     siteMetadata: {
-        title: `WAQANKI ECO LODGE`,
+        title: `WAQANKI ECOLODGE`,
         author: `@William_RMz`,
         description: `Hotel Ecolodge Waqanki. Ofrece servicios de guiado para avistamiento de aves y reservorio de orquídeas, además, puedes conocer distintos
                       puntos turísticos.`,
