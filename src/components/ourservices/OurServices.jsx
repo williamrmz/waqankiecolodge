@@ -13,8 +13,9 @@ import telescopeIcon from "@iconify-icons/mdi/telescope";
 import waterIcon from "@iconify-icons/mdi/water";
 import { StaticImage } from "gatsby-plugin-image";
 
+// npm install --save-dev @iconify/react @iconify-icons/dashicons
 import { Icon } from "@iconify/react";
-import eyeOutline from "@iconify-icons/mdi/eye-outline";
+import moneyIcon from "@iconify-icons/mdi/money";
 
 export default function OurServices() {
     const { t } = useTranslation();
@@ -204,14 +205,14 @@ export default function OurServices() {
 
                 <div className="d-flex justify-content-center mt-0">
                     <div
-                        className="btn btn-service"
+                        className="btn btn-price"
                         data-bs-toggle="modal"
                         data-bs-target={`#modal-prices`}
                     >
-                        <span style={{ marginRight: "1rem" }}>
+                        <span>
                             <Trans>boton-precios</Trans>
                         </span>
-                        <Icon icon={eyeOutline} className="ml-2" />
+                        <Icon icon={moneyIcon} className="ms-1 mb-1" />
                     </div>
                 </div>
                 <div>

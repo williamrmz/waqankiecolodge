@@ -6,7 +6,7 @@ const Colleccion = ({ clases, datos, sum }) => {
     return (
         <>
             <div className={`carousel-item ${clases}`}>
-                <div className="d-flex justify-content-center mt-5">
+                <div className="d-flex justify-content-center mt-3">
                     {datos.map((service, i) => {
                         return (
                             <Item
