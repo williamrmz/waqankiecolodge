@@ -20,7 +20,7 @@ const Header = () => {
         <header className="vh-100 w-100 header" id="inicio">
             <StaticImage
                 className="header-background"
-                src={"../../images/bg.png"}
+                src={"../../images/bg_new.png"}
                 alt="Background"
                 placeholder="none"
             />
