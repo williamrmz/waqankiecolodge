@@ -21,6 +21,16 @@
     "service5-descripcion": "Waqanki has 3 trails for bird watching where you can find more than 400 species of birds, distributed over 104 hectares.",
     "service6-titulo": "Walks in the forest and visit to waterfalls",
     "service6-descripcion": "In Waqanki Ecolodge you can also go hiking or tracking through the trails, ending the tour at a waterfall with a waterfall approximately 10 meters high.",
+    "services-price-title": "Hours of Operation and Prices of Our Services",
+    "services-horario": "Attention schedule",
+    "services-horario-descrip": "Monday to Sunday from 7:00 am - 5:00 pm",
+    "services-price-lugar": "Place",
+    "services-price-precio": "Price",
+    "services-price-adultos": "Adults",
+    "services-price-niños": "Kids",
+    "services-price-jardin": "Orchid Garden",
+    "services-price-observatorio": "Hummingbird Observatory",
+
     "seccion-habitaciones": "Our Rooms",
     "seccion-catalogues": "Gallery",
     "catalogues-titulo-aves": "Bird Album",
@@ -54,5 +64,6 @@
 
     "boton-reserve": "RESERVE",
     "boton-ver-mas": "See more",
-    "boton-descubrenos": "Discover Us"
+    "boton-descubrenos": "Discover Us",
+    "boton-precios": "Hours of Operation and Prices"
 }

@@ -21,6 +21,16 @@
     "service5-descripcion": "Waqanki tiene 3 trochas para observación de aves en donde se pueden encontrar más de 400 especies de aves, distribuidas en las 104 hectáreas.",
     "service6-titulo": "Caminatas en el bosque y visita a cascadas",
     "service6-descripcion": "En Waqanki Ecolodge también se puede realizar caminatas o tracking a través de las trochas, finalizando el recorrido en una cascada con una caída de agua de aproximadamente 10 metros de altura.",
+    "services-price-title": "Horarios de Atención y Precios de Nuestros Servicios",
+    "services-horario": "Horario de atención",
+    "services-horario-descrip": "de Lunes a Domingo de 7:00 am – 5:00 pm",
+    "services-price-lugar": "Lugar",
+    "services-price-precio": "Precio",
+    "services-price-adultos": "Adultos",
+    "services-price-niños": "Niños",
+    "services-price-jardin": "Jardín Orquideas",
+    "services-price-observatorio": "Observatorio de Colibríes",
+
     "seccion-habitaciones": "Nuestras Habitaciones",
     "seccion-catalogues": "Galería",
     "catalogues-titulo-aves": "Álbum de Aves",
@@ -54,5 +64,6 @@
 
     "boton-reserve": "RESERVAR",
     "boton-ver-mas": "Ver más",
-    "boton-descubrenos": "Descúbrenos"
+    "boton-descubrenos": "Descúbrenos",
+    "boton-precios": "Horarios de Atención y Precios"
 }

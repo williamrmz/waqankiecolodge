@@ -1,6 +1,7 @@
 import React from "react";
 import Colleccion from "./Colleccion";
 import Description from "./Description";
+import ModalPrices from "./ModalPrices";
 
 import { useTranslation, Trans } from "gatsby-plugin-react-i18next";
 
@@ -11,6 +12,9 @@ import flowerTulip from "@iconify-icons/mdi/flower-tulip";
 import telescopeIcon from "@iconify-icons/mdi/telescope";
 import waterIcon from "@iconify-icons/mdi/water";
 import { StaticImage } from "gatsby-plugin-image";
+
+import { Icon } from "@iconify/react";
+import eyeOutline from "@iconify-icons/mdi/eye-outline";
 
 export default function OurServices() {
     const { t } = useTranslation();
@@ -192,19 +196,25 @@ export default function OurServices() {
             className="position-relative py-5"
         >
             <div className="container-fluid align-self-stretch mb-5">
-                <div
-                    className="d-flex justify-content-center"
-                    // data-sal="slide-down"
-                    // data-sal-duration="1000"
-                    // data-sal-easing="ease"
-                >
+                <div className="d-flex justify-content-center mb-2">
                     <h2 className="section-title">
                         <Trans>seccion-servicios</Trans>
                     </h2>
                 </div>
-                <div
-                // data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease"
-                >
+
+                <div className="d-flex justify-content-center mt-0">
+                    <div
+                        className="btn btn-service"
+                        data-bs-toggle="modal"
+                        data-bs-target={`#modal-prices`}
+                    >
+                        <span style={{ marginRight: "1rem" }}>
+                            <Trans>boton-precios</Trans>
+                        </span>
+                        <Icon icon={eyeOutline} className="ml-2" />
+                    </div>
+                </div>
+                <div>
                     <div
                         id="carouselServices"
                         className="carousel slide d-none d-lg-block"
@@ -220,10 +230,7 @@ export default function OurServices() {
                             data-bs-target="#carouselServices"
                             data-bs-slide="prev"
                         >
-                            <span
-                                className="carousel-control-prev-icon"
-                                aria-hidden="true"
-                            ></span>
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Previous</span>
                         </button>
                         <button
@@ -232,10 +239,7 @@ export default function OurServices() {
                             data-bs-target="#carouselServices"
                             data-bs-slide="next"
                         >
-                            <span
-                                className="carousel-control-next-icon"
-                                aria-hidden="true"
-                            ></span>
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Next</span>
                         </button>
                     </div>
@@ -246,11 +250,7 @@ export default function OurServices() {
                         data-bs-interval="false"
                     >
                         <div className="carousel-inner">
-                            <Colleccion
-                                sum={0}
-                                clases={"active"}
-                                datos={arreglosmActive}
-                            />
+                            <Colleccion sum={0} clases={"active"} datos={arreglosmActive} />
                             {arreglosm.map((arreglo, i) => (
                                 <Colleccion sum={i} key={i} datos={[arreglo]} />
                             ))}
@@ -261,10 +261,7 @@ export default function OurServices() {
                             data-bs-target="#carouselServicesSmall"
                             data-bs-slide="prev"
                         >
-                            <span
-                                className="carousel-control-prev-icon"
-                                aria-hidden="true"
-                            ></span>
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Previous</span>
                         </button>
                         <button
@@ -273,16 +270,14 @@ export default function OurServices() {
                             data-bs-target="#carouselServicesSmall"
                             data-bs-slide="next"
                         >
-                            <span
-                                className="carousel-control-next-icon"
-                                aria-hidden="true"
-                            ></span>
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Next</span>
                         </button>
                     </div>
                 </div>
             </div>
 
+            <ModalPrices />
             <Description index={1} />
             <Description index={2} />
             <Description index={3} />
