@@ -4,28 +4,28 @@ import mapMarker from '@iconify-icons/mdi/map-marker';
 import emailMultiple from '@iconify-icons/mdi/email-multiple';
 import phoneIcon from '@iconify-icons/mdi/phone';
 
-// import { Link as LinkI18, useTranslation, useI18next } from "gatsby-plugin-react-i18next";
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const NavBar = () => {
 	// const { language, originalPath } = useI18next();
-	// const { t } = useTranslation();
+	const { t } = useTranslation();
 	return (
 		<section className="section-footer text-white">
 			<div className="row">
 				<div className="col-lg-6 text-left mb-5">
-					<h5 className="fw-bold pb-4">CONTÁCTANOS</h5>
+					<h5 className="fw-bold pb-4">{t('seccion-contacto')}</h5>
 					<div className="text-left row align-items-center mb-3">
 						<Icon style={{ opacity: '.7' }} className="col-3" icon={mapMarker} width="55" height="55" />
 						<div className="col-9">
-							<h6 className="fw-bold">Dirección</h6>
+							<h6 className="fw-bold">{t('seccion-contacto-direccion')}</h6>
 							<p>Carretera Baños Termales Km. o3 Moyobamba - Perú</p>
 						</div>
 					</div>
 					<div className="text-left row align-items-center mb-3">
 						<Icon style={{ opacity: '.7' }} className="col-3" icon={emailMultiple} width="55" height="55" />
 						<div className="col-9">
-							<h6 className="fw-bold">Correos</h6>
+							<h6 className="fw-bold">{t('seccion-contacto-correo')}</h6>
 							<span className="d-flex">reservas@waqankilodge.pe</span>
 							<span className="d-flex">waqankireservas@hotmail.com</span>
 							<p>birdinnmoyo@gmail.com</p>
@@ -34,7 +34,7 @@ const NavBar = () => {
 					<div className="text-left row align-items-center mb-3">
 						<Icon style={{ opacity: '.7' }} className="col-3" icon={phoneIcon} width="55" height="55" />
 						<div className="col-9">
-							<h6 className="fw-bold">Teléfonos</h6>
+							<h6 className="fw-bold">{t('seccion-contacto-phones')}</h6>
 							<span className="d-flex">+51 964 785 853</span>
 							<span className="d-flex">+51 964 016 947</span>
 							<span className="d-flex">+51 956 034 628</span>
@@ -43,7 +43,7 @@ const NavBar = () => {
 				</div>
 				<div className="col-lg-6 text-left">
 					<div>
-						<h5 className="fw-bold pb-3">REDES SOCIALES</h5>
+						<h5 className="fw-bold pb-3">{t('seccion-contacto-redes')}</h5>
 						<div className="d-flex">
 							<StaticImage
 								style={{ width: '50px', marginRight: '1rem' }}
@@ -66,7 +66,7 @@ const NavBar = () => {
 						</div>
 					</div>
 					<div className="mt-5">
-						<h5 className="fw-bold pb-3">UBÍCANOS</h5>
+						<h5 className="fw-bold pb-3">{t('seccion-contacto-ubicacion')}</h5>
 						<div>
 							<iframe
 								title="Ubicación"
@@ -82,7 +82,7 @@ const NavBar = () => {
 				</div>
 			</div>
 
-			<div className="text-center m-auto mt-5">© 2017, Waqanki Logde Perú. Todos los derechos Reservados.</div>
+			<div className="text-center m-auto mt-5">{t('seccion-contacto-copy')}</div>
 		</section>
 	);
 };

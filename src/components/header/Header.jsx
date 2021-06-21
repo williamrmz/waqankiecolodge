@@ -1,11 +1,11 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-// import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from 'gatsby-plugin-image';
 import DescriptionHotel from './DescriptionHotel';
 
 const Header = () => {
-	// const { t } = useTranslation();
+	const { t } = useTranslation();
 	const data = useStaticQuery(graphql`
 		query {
 			site {
@@ -37,8 +37,8 @@ const Header = () => {
 					data-sal-easing="ease"
 				>
 					{/* {t(`Descripcion`)} */}
-					<button className="btn btn-landing" data-bs-toggle="modal" data-bs-target={`#description-hotel`}>
-						Descúbrenos
+					<button className="btn btn-dark btn-landing" data-bs-toggle="modal" data-bs-target={`#description-hotel`}>
+						{t(`boton-descubrenos`)}
 					</button>
 				</p>
 			</div>

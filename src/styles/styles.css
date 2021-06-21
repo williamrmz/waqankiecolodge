@@ -84,6 +84,10 @@ html {
 	width: 65%;
 }
 
+.w-30 {
+	width: 30%;
+}
+
 .w-35 {
 	width: 35%;
 }
@@ -114,6 +118,10 @@ html {
 
 .h-75 {
 	height: 75%;
+}
+
+.vh-60 {
+	height: 60vh;
 }
 
 /* ROOMS */
@@ -184,7 +192,12 @@ html {
 	height: 100vh;
 }
 
+.container-catalogue {
+	width: 75%;
+}
+
 .catalogue-card {
+	width: 400px;
 	border-radius: 30px !important;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -199,10 +212,7 @@ html {
 	border-bottom-right-radius: 30px;
 }
 
-.image-link-to:hover .catalogue-card-image {
-	filter: brightness(0.4) blur(1px);
-}
-
+.image-link-to:hover .catalogue-card-image,
 .image-link-to:hover .catalogue-card-imageinverse {
 	filter: brightness(0.4) blur(1px);
 }
@@ -213,7 +223,8 @@ html {
 
 .btn-more-info {
 	position: absolute;
-	left: 33%;
+	width: 140px;
+	left: calc(50%) - 140px;
 	top: 25%;
 	color: white;
 	border: solid 1px white;
@@ -238,7 +249,8 @@ html {
 
 .btn-more-info-inverse {
 	position: absolute;
-	left: 33%;
+	width: 140px;
+	left: calc(50%) - 140px;
 	top: 75%;
 	color: white;
 	border: solid 1px white;
@@ -448,7 +460,7 @@ ul.timeline > li:before {
 	padding-bottom: 3rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px), (max-height: 600px) {
 	.logo-header-link {
 		margin: 0.2rem 0 0 0.2rem;
 	}
@@ -505,6 +517,7 @@ ul.timeline > li:before {
 	}
 
 	.container-catalogue {
+		width: 100%;
 		flex-direction: column-reverse;
 		justify-content: center;
 		align-items: center;
@@ -614,9 +627,9 @@ ul.timeline > li:before {
 }
 
 .btn-landing {
+	/* background-color: #207129; */
 	border-radius: 2rem;
 	margin: 1.5rem 0;
-	background-color: yellow;
 }
 
 .btn-service {

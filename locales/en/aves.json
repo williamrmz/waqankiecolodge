@@ -5,5 +5,13 @@
 	"Catalogos": "Catalogs",
 	"Tours": "Tours",
 	"Descripcion": "More than 250 species of orchids, ornamental plants, viewpoint for observing hummingbirds, birdwatching trails, butterflies, amphibians and the coffee route.",
-	"Ir": "Go"
+	"Ir": "Go",
+
+	"seccion-contacto": "CONTACT US",
+	"seccion-contacto-direccion": "Address",
+	"seccion-contacto-correo": "Emails",
+	"seccion-contacto-telefonos": "Phones",
+	"seccion-contacto-redes": "SOCIAL MEDIA",
+	"seccion-contacto-ubicacion": "LOCATE US",
+	"seccion-contacto-copy": "© 2017, Waqanki Ecologde Perú. All rights Reserved."
 }
