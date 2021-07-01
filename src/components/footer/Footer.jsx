@@ -40,7 +40,7 @@ const NavBar = () => {
                             <h6 className="fw-bold">{t("seccion-contacto-correo")}</h6>
                             <span className="d-flex">reservas@waqankilodge.pe</span>
                             <span className="d-flex">waqankireservas@hotmail.com</span>
-                            <p>birdinnmoyo@gmail.com</p>
+                            <p>birdinginmoyo@gmail.com</p>
                         </div>
                     </div>
                     <div className="text-left row align-items-center mb-3">
