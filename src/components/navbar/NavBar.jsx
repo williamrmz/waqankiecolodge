@@ -8,7 +8,7 @@ const NavBar = () => {
 
     return (
         <nav
-            className="navbar navbar-expand-lg navbar-light"
+            className="navbar navbar-expand-sm navbar-light"
             style={{
                 position: "absolute",
                 top: "0",
@@ -27,101 +27,107 @@ const NavBar = () => {
                     />
                 </Link>
 
-                <div className="container d-none d-lg-block">
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div className="navbar-nav">
-                            <Link className="nav-link text-white active" aria-current="page" to="/">
-                                {t("Inicio")}
-                            </Link>
-                            <Link className="nav-link text-white" to="/#servicios">
-                                {t("Servicios")}
-                            </Link>
-                            <Link className="nav-link text-white" to="/#habitaciones">
-                                {t("Reservas")}
-                            </Link>
-                            <Link className="nav-link text-white" to="/#catalogos">
-                                {t("Catalogos")}
-                            </Link>
-                            <Link className="nav-link text-white" to="/#tours">
-                                {t("Tours")}
-                            </Link>
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+
+                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div className="navbar-nav">
+                        <Link className="nav-link text-white active" aria-current="page" to="/">
+                            {t("Inicio")}
+                        </Link>
+                        <Link className="nav-link text-white" to="/#servicios">
+                            {t("Servicios")}
+                        </Link>
+                        <Link className="nav-link text-white" to="/#habitaciones">
+                            {t("Reservas")}
+                        </Link>
+                        <Link className="nav-link text-white" to="/#catalogos">
+                            {t("Catalogos")}
+                        </Link>
+                        <Link className="nav-link text-white" to="/#tours">
+                            {t("Tours")}
+                        </Link>
+
+                        <div className="dropdown dropstart">
+                            <a
+                                role="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                href="/"
+                            >
+                                {language === "es" ? (
+                                    <StaticImage
+                                        className="box-shadow-img"
+                                        style={{ width: "35px", marginRight: "1rem" }}
+                                        src={`../../images/spanishLanguage.png`}
+                                        alt="Spanish"
+                                        placeholder="none"
+                                    />
+                                ) : (
+                                    <StaticImage
+                                        className="box-shadow-img"
+                                        style={{ width: "35px", marginRight: "1rem" }}
+                                        src={"../../images/englishLanguage.png"}
+                                        alt="English"
+                                        placeholder="none"
+                                    />
+                                )}
+                            </a>
+                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <Link
+                                    to={originalPath}
+                                    rel="alternate"
+                                    language={"es"}
+                                    hrefLang="es"
+                                    className="dropdown-item d-flex"
+                                    style={{ cursor: "pointer" }}
+                                >
+                                    <StaticImage
+                                        className="box-shadow-img"
+                                        style={{
+                                            width: "25px",
+                                            marginRight: "1rem",
+                                        }}
+                                        src={"../../images/spanishLanguage.png"}
+                                        alt="Spanish"
+                                        placeholder="none"
+                                    />
+                                    Español
+                                </Link>
+
+                                <Link
+                                    to={originalPath}
+                                    rel="alternate"
+                                    language={"en"}
+                                    hrefLang="en"
+                                    className="dropdown-item d-flex"
+                                    style={{ cursor: "pointer" }}
+                                >
+                                    <StaticImage
+                                        className="box-shadow-img"
+                                        style={{
+                                            width: "25px",
+                                            marginRight: "1rem",
+                                        }}
+                                        src={"../../images/englishLanguage.png"}
+                                        alt="Spanish"
+                                        placeholder="none"
+                                    />
+                                    English
+                                </Link>
+                            </ul>
                         </div>
                     </div>
-                </div>
-
-                <div className="dropdown dropstart">
-                    <a
-                        role="button"
-                        id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        href="/"
-                    >
-                        {language === "es" ? (
-                            <StaticImage
-                                className="box-shadow-img"
-                                style={{ width: "35px", marginRight: "1rem" }}
-                                src={`../../images/spanishLanguage.png`}
-                                alt="Spanish"
-                                placeholder="none"
-                            />
-                        ) : (
-                            <StaticImage
-                                className="box-shadow-img"
-                                style={{ width: "35px", marginRight: "1rem" }}
-                                src={"../../images/englishLanguage.png"}
-                                alt="English"
-                                placeholder="none"
-                            />
-                        )}
-                    </a>
-                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li>
-                            <Link
-                                to={originalPath}
-                                rel="alternate"
-                                language={"es"}
-                                hrefLang="es"
-                                className="dropdown-item d-flex"
-                                style={{ cursor: "pointer" }}
-                            >
-                                <StaticImage
-                                    className="box-shadow-img"
-                                    style={{
-                                        width: "25px",
-                                        marginRight: "1rem",
-                                    }}
-                                    src={"../../images/spanishLanguage.png"}
-                                    alt="Spanish"
-                                    placeholder="none"
-                                />
-                                Español
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link
-                                to={originalPath}
-                                rel="alternate"
-                                language={"en"}
-                                hrefLang="en"
-                                className="dropdown-item d-flex"
-                                style={{ cursor: "pointer" }}
-                            >
-                                <StaticImage
-                                    className="box-shadow-img"
-                                    style={{
-                                        width: "25px",
-                                        marginRight: "1rem",
-                                    }}
-                                    src={"../../images/englishLanguage.png"}
-                                    alt="Spanish"
-                                    placeholder="none"
-                                />
-                                English
-                            </Link>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </nav>

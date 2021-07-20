@@ -29,7 +29,7 @@ const OurCatalogues = () => {
     return (
         <section
             id="catalogos"
-            className="section-cataloge d-flex flex-column justify-content-center align-items-center pb-4"
+            className="section-cataloge d-flex flex-column justify-content-center align-items-center pb-4 "
         >
             <div className="my-3 text-center">
                 <h1 className="section-title text-white">{t(`seccion-catalogues`)}</h1>
