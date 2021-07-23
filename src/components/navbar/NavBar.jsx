@@ -6,9 +6,35 @@ const NavBar = () => {
     const { language, originalPath } = useI18next();
     const { t } = useTranslation();
 
+    const imgEs = (
+        <StaticImage
+            className="box-shadow-img"
+            style={{
+                width: "25px",
+                marginRight: "1rem",
+            }}
+            src={"../../images/spanishLanguage.png"}
+            alt="Spanish"
+            placeholder="none"
+        />
+    );
+
+    const imgEn = (
+        <StaticImage
+            className="box-shadow-img"
+            style={{
+                width: "25px",
+                marginRight: "1rem",
+            }}
+            src={"../../images/englishLanguage.png"}
+            alt="Spanish"
+            placeholder="none"
+        />
+    );
+
     return (
         <nav
-            className="navbar navbar-expand-sm navbar-light"
+            className="navbar navbar-expand-sm navbar-dark navbar-bg"
             style={{
                 position: "absolute",
                 top: "0",
@@ -36,11 +62,18 @@ const NavBar = () => {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span className="navbar-toggler-icon"></span>
+                    <span
+                        style={{
+                            color: "white",
+                            textColor: "white",
+                            borderColor: "white",
+                        }}
+                        className="navbar-toggler-icon"
+                    ></span>
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
+                    <div className="navbar-nav w-100">
                         <Link className="nav-link text-white active" aria-current="page" to="/">
                             {t("Inicio")}
                         </Link>
@@ -53,11 +86,11 @@ const NavBar = () => {
                         <Link className="nav-link text-white" to="/#catalogos">
                             {t("Catalogos")}
                         </Link>
-                        <Link className="nav-link text-white" to="/#tours">
+                        <Link className="nav-link text-white mr-auto" to="/#tours">
                             {t("Tours")}
                         </Link>
 
-                        <div className="dropdown dropstart">
+                        <div className="ms-auto dropdown dropstart ">
                             <a
                                 role="button"
                                 id="dropdownMenuButton1"
@@ -92,16 +125,7 @@ const NavBar = () => {
                                     className="dropdown-item d-flex"
                                     style={{ cursor: "pointer" }}
                                 >
-                                    <StaticImage
-                                        className="box-shadow-img"
-                                        style={{
-                                            width: "25px",
-                                            marginRight: "1rem",
-                                        }}
-                                        src={"../../images/spanishLanguage.png"}
-                                        alt="Spanish"
-                                        placeholder="none"
-                                    />
+                                    {imgEs}
                                     Español
                                 </Link>
 
@@ -113,16 +137,7 @@ const NavBar = () => {
                                     className="dropdown-item d-flex"
                                     style={{ cursor: "pointer" }}
                                 >
-                                    <StaticImage
-                                        className="box-shadow-img"
-                                        style={{
-                                            width: "25px",
-                                            marginRight: "1rem",
-                                        }}
-                                        src={"../../images/englishLanguage.png"}
-                                        alt="Spanish"
-                                        placeholder="none"
-                                    />
+                                    {imgEn}
                                     English
                                 </Link>
                             </ul>

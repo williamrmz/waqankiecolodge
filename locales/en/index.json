@@ -41,7 +41,7 @@
     "habitacion-simple": "SINGLE",
     "habitacion-doble": "DOUBLE",
     "habitacion-matrimonial": "MATRIMONIAL",
-    "habitacion-reserva": "Reserver Room",
+    "habitacion-reserva": "Reserve Room",
     "habitacion-reserva-nombre": "Names",
     "habitacion-reserva-apellidos": "Last Name",
     "habitacion-reserva-correo": "Email",
