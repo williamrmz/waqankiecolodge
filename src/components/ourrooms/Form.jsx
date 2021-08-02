@@ -4,9 +4,16 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 const Form = ({ sendInfo, handleChange }) => {
     const { t } = useTranslation();
     return (
-        <form className="w-75 p-1">
+        <form
+            className="w-75 p-1"
+            action="https://formsubmit.co/reservas@waqankiecolodge.com"
+            method="POST"
+        >
             <div className="w-100 d-flex flex-column justify-content-center align-items-center">
                 <h3 className="mb-3">{t(`habitacion-reserva`)}</h3>
+
+                <input type="hidden" name="_subject" value="Nueva Reserva!" />
+                <input type="hidden" name="_next" value="https://waqankiecolodge.com/"></input>
 
                 <input
                     className="form-control mb-2"
@@ -62,7 +69,7 @@ const Form = ({ sendInfo, handleChange }) => {
                     onChange={handleChange}
                 />
 
-                <button type="button" className="btn btn-dark w-75" onClick={() => sendInfo()}>
+                <button type="submit" className="btn btn-dark w-75" onClick={() => sendInfo()}>
                     {t("boton-reserve")}
                 </button>
             </div>

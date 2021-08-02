@@ -38,7 +38,7 @@ const NavBar = () => {
                         />
                         <div className="col-9">
                             <h6 className="fw-bold">{t("seccion-contacto-correo")}</h6>
-                            <span className="d-flex">reservas@waqankilodge.pe</span>
+                            <span className="d-flex">reservas@waqankiecolodge.com</span>
                             <span className="d-flex">waqankireservas@hotmail.com</span>
                             <p>birdinginmoyo@gmail.com</p>
                         </div>
